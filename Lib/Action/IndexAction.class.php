@@ -37,7 +37,7 @@ class IndexAction extends Action {
             $this->assign('image',C("DEFAULT_AVATAR"));
 
         // 查询所有回复中有无提到登录用户
-        
+
 
         $this->display();
     }
