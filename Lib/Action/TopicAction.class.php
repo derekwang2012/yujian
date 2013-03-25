@@ -62,6 +62,15 @@ class TopicAction extends Action {
         $replyCount = $Reply->where('topic_id = ' . $id)->count();
         $this->assign('replyCount',$replyCount);
 
+        if(session('?user_id')) {
+
+            // 查询所有回复中有无提到登录用户
+            $Notification = M('ReplyToCertainUsers');
+            $unviewedReplies = $Notification->where('user_id = ' . session('user_id') . ' AND ' . 'viewed = 0')->count();
+            $this->assign('unviewedReplies',$unviewedReplies);
+        }
+
+
         $this->display();
     }
 
@@ -81,6 +90,11 @@ class TopicAction extends Action {
                 $this->assign('image',$list['image']);
             else
                 $this->assign('image',C("DEFAULT_AVATAR"));
+
+            // 查询所有回复中有无提到登录用户
+            $Notification = M('ReplyToCertainUsers');
+            $unviewedReplies = $Notification->where('user_id = ' . session('user_id') . ' AND ' . 'viewed = 0')->count();
+            $this->assign('unviewedReplies',$unviewedReplies);
 
             $this->display();
         }
@@ -121,38 +135,41 @@ class TopicAction extends Action {
             $data["content"] = $_POST["content"];
             $data["user_id"] = session('user_id');
 
-            // -----------------
-            $parts = explode('@', $data["content"]);
-            $array_usernames = array();
-            foreach ($parts as $value) {
-                $trimmedValue = trim($value);
-                if($trimmedValue != "") {
-                    if(!strpos($trimmedValue, " ")) {
-                        $array_usernames[] = $trimmedValue;
-                    }
-                    else {
-                        $array_usernames[] = substr($trimmedValue, 0 , strpos($trimmedValue, " "));
-                    }
-                }
-            }
-
-            $User = M("User");
-            $uids = array();
-            foreach(array_unique($array_usernames, SORT_REGULAR) as $value) {
-
-                $uids[] = $User->where('username="'.$value.'"')->getField('id');
-
-            }
-
-            $data["to_certain_users"] = implode(",",$uids);
-
-            // -----------------
-
-
-
             if ($vo = $Reply->create()) {
                 $list = $Reply->add($data);
                 if ($list !== false) {
+
+                    // -----------------
+                    $parts = explode('@', $data["content"]);
+                    if(strpos($data["content"], '@') !== false) {
+                        $array_usernames = array();
+                        foreach ($parts as $value) {
+                            $trimmedValue = trim($value);
+                            if($trimmedValue != "") {
+                                if(!strpos($trimmedValue, " ")) {
+                                    $array_usernames[] = $trimmedValue;
+                                }
+                                else {
+                                    $array_usernames[] = substr($trimmedValue, 0 , strpos($trimmedValue, " "));
+                                }
+                            }
+                        }
+
+                        $User = M("User");
+
+                        foreach(array_unique($array_usernames, SORT_REGULAR) as $value) {
+
+                            $ReplyToCertainUsers = M("ReplyToCertainUsers");
+
+                            $data['user_id'] = $User->where('username="'.$value.'"')->getField('id');
+                            $data['reply_id'] = $list;
+                            $data["topic_id"] = $_POST["tid"];
+
+                            $ReplyToCertainUsers->add($data);
+                        }
+                    }
+                    // -----------------
+
                     $this->redirect('/Topic/read/id/'.$_POST["tid"]);
 
                 } else {

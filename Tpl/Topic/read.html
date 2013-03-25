@@ -10,7 +10,9 @@
         <div class="topic">
             <div class="topic_header"  style=" border-bottom: 1px solid #E2E2E2;" >
                 <h1 style="font-size: 18px; font-weight: blod">
-                    <a class="tag tag_{$ttagnum}" href="/tag/{$ttag}">{$ttag}</a>
+                    <notempty name="ttag">
+                        <a class="tag tag_{$ttagnum}" href="/tag/{$ttag}">{$ttag}</a>
+                    </notempty>
                     {$topic}
                 </h1>
             </div>

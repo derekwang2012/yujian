@@ -37,6 +37,11 @@ class UserAction extends Action {
             $this->assign('username',$list['username']);
             $this->assign('description',$list['description']);
 
+            // 查询所有回复中有无提到登录用户
+            $Notification = M('ReplyToCertainUsers');
+            $unviewedReplies = $Notification->where('user_id = ' . session('user_id') . ' AND ' . 'viewed = 0')->count();
+            $this->assign('unviewedReplies',$unviewedReplies);
+
             $this->display();
         }
         else

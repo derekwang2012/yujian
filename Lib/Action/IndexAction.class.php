@@ -15,7 +15,7 @@ class IndexAction extends Action {
           LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
           ORDER BY tcreatedate desc");
 
-
+        $this->list =  $list;
         /*$list = $Topic
             ->table('thisisfive_topic t, thisisfive_user u, thisisfive_reply r')
             ->where('t.user_id = u.id AND t.id = r.topic_id')
@@ -24,25 +24,26 @@ class IndexAction extends Action {
             ->order('t.create_date desc' )
             ->select();*/
 
-        $this->list =  $list;
 
-        // 查询登录用户信息
-        $User = M("User");
-        $condition['id'] = session('user_id');
-        $list = $User->where($condition)->find();
-        $this->assign('udesc',$list['description']);
-        if($list['image'] != "")
-            $this->assign('image',$list['image']);
-        else
-            $this->assign('image',C("DEFAULT_AVATAR"));
+        if(session('?user_id')) {
+            // 查询登录用户信息
+            $User = M("User");
+            $condition['id'] = session('user_id');
+            $list = $User->where($condition)->find();
+            $this->assign('udesc',$list['description']);
+            if($list['image'] != "")
+                $this->assign('image',$list['image']);
+            else
+                $this->assign('image',C("DEFAULT_AVATAR"));
 
-        // 查询所有回复中有无提到登录用户
-
+            // 查询所有回复中有无提到登录用户
+            $Notification = M('ReplyToCertainUsers');
+            $unviewedReplies = $Notification->where('user_id = ' . session('user_id') . ' AND ' . 'viewed = 0')->count();
+            $this->assign('unviewedReplies',$unviewedReplies);
+        }
 
         $this->display();
     }
-
-
 
 
 }

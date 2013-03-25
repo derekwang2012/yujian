@@ -16,9 +16,11 @@
         <div class="pro">
             <ul class="reg_link">
                 <if condition="session('?user_a')">
-                    <li>
-                        <a title="1条未读提醒" href="/notification" class="notifi-num">1</a>
-                    </li>
+                    <if condition="$unviewedReplies gt 0">
+                        <li>
+                            <a title="{$unviewedReplies}条未读提醒" href="/notification" class="notifi-num">{$unviewedReplies}</a>
+                        </li>
+                    </if>
                     <li>
 
                         <a href="__APP__/User/profile">{$Think.session.user_a}</a>
