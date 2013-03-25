@@ -1,0 +1,1132 @@
+[ 2013-03-26T00:50:33+08:00 ] ERR: (ThinkException) Access denied for user 'root'@'localhost' (using password: NO)
+[ 2013-03-26T00:50:33+08:00 ] 127.0.0.1 /newPHPProject/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) C:\wamp\www\newPHPProject\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class IndexAction could not be converted to string C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-03-26T00:53:31+08:00 ] ERR: (ThinkException) Access denied for user 'root'@'localhost' (using password: NO)
+[ 2013-03-26T00:53:31+08:00 ] 127.0.0.1 /newPHPProject/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) C:\wamp\www\newPHPProject\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class IndexAction could not be converted to string C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-03-26T00:53:32+08:00 ] ERR: (ThinkException) Access denied for user 'root'@'localhost' (using password: NO)
+[ 2013-03-26T00:53:32+08:00 ] 127.0.0.1 /newPHPProject/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) C:\wamp\www\newPHPProject\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class IndexAction could not be converted to string C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-03-26T00:53:33+08:00 ] ERR: (ThinkException) Access denied for user 'root'@'localhost' (using password: NO)
+[ 2013-03-26T00:53:33+08:00 ] 127.0.0.1 /newPHPProject/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) C:\wamp\www\newPHPProject\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class IndexAction could not be converted to string C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type C:\wamp\www\newPHPProject\ThinkPHP\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-03-26T00:54:04+08:00 ] 127.0.0.1 /newPHPProject/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.007121s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.009175s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000190s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027594s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001389s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.029058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015287s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.044413s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.045406s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.046300s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.047078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003663s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.048180s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001034s ]
+
+[ 2013-03-26T00:54:06+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/6
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002161s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002354s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006661s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 6 [ RunTime:0.003008s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 6 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.008515s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.004569s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 6 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.004419s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 6 LIMIT 1   [ RunTime:0.000154s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042109s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001405s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.043592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017453s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.061105s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.062038s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.062874s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.063592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003430s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.064630s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2013-03-26T00:54:10+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001218s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006805s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.008360s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000169s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027432s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001387s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.028898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012932s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.041887s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.042800s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.043660s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.044409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003495s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.045476s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2013-03-26T00:54:11+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/5
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001722s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001883s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006002s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 5 [ RunTime:0.000815s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 5 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007797s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.004374s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 5 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.000231s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 5 LIMIT 1   [ RunTime:0.000110s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.032709s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001285s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.034065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016333s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.050466s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.051339s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.052170s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.052890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003360s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.053918s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2013-03-26T00:54:11+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001641s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001785s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.007147s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007755s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000160s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.031030s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001290s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.032400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012451s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.044905s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.045804s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.046634s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.047355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003395s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.048395s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2013-03-26T01:02:48+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000773s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006203s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007695s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000191s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.023825s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000920s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.024823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013626s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.038507s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.039044s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.039516s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.039871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001946s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.040546s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2013-03-26T01:02:58+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/6
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001641s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001845s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006031s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 6 [ RunTime:0.000962s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 6 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000232s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.008035s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.004604s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 6 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.003142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 6 LIMIT 1   [ RunTime:0.000169s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.038000s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000929s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.039009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015297s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054373s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.055033s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.055596s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.056045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002348s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.056825s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2013-03-26T01:03:00+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001171s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001336s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006155s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007636s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000168s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.025345s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.026252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011108s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.037418s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.037960s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.038449s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.038825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002067s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.039590s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2013-03-26T01:03:01+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/5
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001052s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.009938s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 5 [ RunTime:0.001076s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 5 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.010760s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000209s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.006350s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 5 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.000333s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 5 LIMIT 1   [ RunTime:0.000158s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044681s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001141s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020018s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.066027s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.066792s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.067444s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.068012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002763s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.068924s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2013-03-26T01:03:02+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001062s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.008453s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.010625s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000233s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.033886s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001147s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.035151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013221s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.048413s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.048957s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.049444s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.049823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002011s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.050528s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2013-03-26T01:03:03+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/4
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001476s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001688s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006054s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 4 [ RunTime:0.000883s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 4 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007781s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.004685s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 4 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.000251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 4 LIMIT 1   [ RunTime:0.000127s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.033591s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000821s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.034488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015895s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.050452s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.050996s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.051482s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.051856s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001998s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.052550s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2013-03-26T01:03:04+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001466s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001671s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006115s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007947s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000179s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027266s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000840s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.028190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011312s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.039562s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.040113s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.040602s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.040980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002020s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.041685s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2013-03-26T01:03:05+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000718s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006255s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 2 [ RunTime:0.000778s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 2 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.008095s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.004762s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 2 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.000294s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 2 LIMIT 1   [ RunTime:0.000130s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.041322s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000859s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015970s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.058297s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.058914s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.059441s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002171s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.060573s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2013-03-26T01:03:06+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001073s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.008708s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007633s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000174s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.029748s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000829s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.030661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010841s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.041560s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.042095s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.042583s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.042969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002020s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.043687s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2013-03-26T01:03:07+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001521s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001732s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006299s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 2 [ RunTime:0.000768s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 2 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007938s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.004689s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 2 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.000236s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 2 LIMIT 1   [ RunTime:0.000115s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.034871s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000833s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.035768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014999s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.050835s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.051377s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.051860s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.052244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002006s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.052946s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2013-03-26T01:07:32+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001260s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.008949s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007471s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000155s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.031247s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000810s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.032140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011120s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.043319s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.043856s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.044330s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.044693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001961s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.045385s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2013-03-26T01:07:33+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/5
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001506s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006357s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 5 [ RunTime:0.000660s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 5 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.008011s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.004586s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 5 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.000249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 5 LIMIT 1   [ RunTime:0.000112s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.031133s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000784s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.031991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015099s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.047162s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.047671s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.048135s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.048492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001907s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.049172s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2013-03-26T01:07:35+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001436s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001642s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.005963s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007573s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000172s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.026162s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000787s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.027030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011021s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.038125s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.038761s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.039307s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.039992s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002510s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.040736s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2013-03-26T01:07:36+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000834s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006857s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 2 [ RunTime:0.000905s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 2 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.008099s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.004826s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 2 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.000254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 2 LIMIT 1   [ RunTime:0.000118s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042910s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000835s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.043827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015720s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.059669s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.060188s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.060653s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.061005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001973s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.061686s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2013-03-26T01:15:10+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001061s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006140s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 2 [ RunTime:0.000766s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 2 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007820s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.005019s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 2 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.000295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 2 LIMIT 1   [ RunTime:0.000128s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044028s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000858s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015277s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.060315s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.060867s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.061357s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.061735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002023s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.062435s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2013-03-26T01:15:56+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000904s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.007068s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 2 [ RunTime:0.000987s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 2 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.008818s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.005405s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 2 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.000291s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 2 LIMIT 1   [ RunTime:0.000143s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.036002s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000942s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.037026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015467s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.052565s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.053096s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.053579s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.053942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001973s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.054633s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2013-03-26T01:15:57+08:00 ] 127.0.0.1 /newPHPProject/index.php/Topic/read/id/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001263s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001417s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.007760s ]
+SQL: UPDATE `thisisfive_topic` SET `hits`=hits+1 WHERE id = 2 [ RunTime:0.000756s ]
+SQL: SELECT t.topic as topic,t.content as content,t.tag as tag,t.tag_num as tag_num,t.create_date as create_date,t.hits as hits,u.id as uid,u.username as username,u.image as image,u.description as description FROM thisisfive_topic t,thisisfive_user u WHERE t.id = 2 AND t.user_id = u.id ORDER BY t.create_date desc  [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007789s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `thisisfive_reply` [ RunTime:0.004594s ]
+SQL: SELECT r.id as id,r.content as content,r.create_date as create_date,u.id as uid,u.image as image,u.username as username FROM thisisfive_reply r,thisisfive_topic t,thisisfive_user u WHERE r.topic_id = t.id AND t.id = 2 AND r.user_id = u.id ORDER BY r.create_date asc  [ RunTime:0.000246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thisisfive_reply` WHERE topic_id = 2 LIMIT 1   [ RunTime:0.000114s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.037109s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000952s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.038139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015262s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.053478s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.054550s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.055176s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.055677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002936s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.056513s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2013-03-26T01:15:58+08:00 ] 127.0.0.1 /newPHPProject/index.php/User/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001726s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001934s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.003095s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000868s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.004033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010124s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.014249s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.014849s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.015421s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.015866s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002294s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.016637s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2013-03-26T01:16:07+08:00 ] 127.0.0.1 /newPHPProject/index.php/User/dologin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000841s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.008549s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `email` = 'derekxiangwang@live.cn' ) LIMIT 1   [ RunTime:0.000275s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.018054s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000902s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.019034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007031s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.026134s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.026716s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.027298s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.027770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002340s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.028569s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2013-03-26T01:16:08+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001243s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006252s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007739s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000223s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.029786s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000909s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.030784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013856s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.044699s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.045275s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.045780s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.046174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002101s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.046895s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2013-03-26T01:16:25+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001324s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001488s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.007075s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.008586s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000237s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.040815s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000913s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.041812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014295s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.056165s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056777s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.057286s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.057683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002142s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.058402s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2013-03-26T01:16:26+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001167s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.008107s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.008035s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000215s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.032028s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000774s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.032885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011353s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.044300s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.044857s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.045353s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.045729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002047s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.046448s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2013-03-26T01:16:33+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001202s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.009786s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.008172s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000219s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.033226s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000837s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.034148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013548s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.047758s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.048357s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.048888s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.049305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002218s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.050076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2013-03-26T01:16:34+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001057s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.005948s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007676s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000206s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.028312s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000859s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.029253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011149s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.040457s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.040987s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.041459s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.041815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001944s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.042497s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2013-03-26T01:17:36+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001645s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001849s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006081s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007423s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000183s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.025056s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000765s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.025905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013860s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.039826s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.040396s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.040892s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.041272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002076s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.042004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2013-03-26T01:18:47+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001420s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001580s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006586s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007521s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000193s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.029704s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001004s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.030787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011433s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.042274s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.042900s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.043465s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.043913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002321s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.044691s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2013-03-26T01:19:50+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001224s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.006102s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007390s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000182s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.023056s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000813s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.023949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011048s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.035052s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.035611s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.036110s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.036486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002053s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.037203s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2013-03-26T01:21:27+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001043s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001171s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.007089s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007964s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000211s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.026917s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000844s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.027837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011413s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.039307s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.039880s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.040355s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.040715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002044s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.041451s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2013-03-26T01:21:28+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001243s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001408s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.007541s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007511s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000195s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.029731s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000894s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.030703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011249s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.042007s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.042537s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.043009s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.043429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002015s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.044118s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2013-03-26T01:22:31+08:00 ] 127.0.0.1 /newPHPProject/index.php/Index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000694s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `thisisfive_topic` [ RunTime:0.005935s ]
+SQL: 
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `thisisfive_user` [ RunTime:0.007669s ]
+SQL: SELECT * FROM `thisisfive_user` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000202s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.023213s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.024117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011968s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.036142s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.036686s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.037153s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.037506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002016s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.038257s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000638s ]
+

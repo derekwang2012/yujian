@@ -1,0 +1,114 @@
+<include file="Public:header" />
+
+<body>
+
+<include file="Public:navigation" />
+
+<div class="container">
+    <!--主体-->
+    <div class="main radius">
+        <div class="topic">
+            <div class="topic_header"  style=" border-bottom: 1px solid #E2E2E2;" >
+                <h1 style="font-size: 18px; font-weight: blod">
+                    <a class="tag tag_{$ttagnum}" href="/tag/{$ttag}">{$ttag}</a>
+                    {$topic}
+                </h1>
+            </div>
+            <div style="margin-top:15px; line-height: 23px; overflow: hidden; word-wrap: break-word;">
+                {$tcontent}
+            </div>
+        </div>
+    </div>
+    <!--侧边栏-->
+
+    <div class="sidebar">
+
+        <div class="box" style="">
+            <div style="height: 100px;">
+                <div style="float:left; margin-right: 10px;">
+                    <a href="/member/{$uid}" style="display:block;">
+                        <img width="100px" height="100px" alt="{$username}" src="__ROOT__/Tpl/Public/image.php?width=100&amp;height=100&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$uimage}">
+                    </a>
+                </div>
+                <div style="">
+                    <div style="color:#636A86">
+                        {$username}
+                    </div>
+                    <div style="margin-top: 10px; color: #808080; word-wrap: break-word;overflow: hidden;">{$udesc}</div>
+                </div>
+            </div>
+            <div style="border-top:1px solid #E2E2E2; margin-top: 20px;">
+                <div class="topic_info">
+                    <span><abbr class="timeago" title="{$tcreatedate}"></abbr></span>
+                    <span>{$thits}次访问</span>
+                    <span>{$replyCount}个回复</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main radius" style="margin-top: 20px; padding-top: 10px;">
+        <div class="reply_list" style="padding: 10px 16px">
+            <div style="padding: 5px 0px; margin-bottom: 5px; text-align: center;">
+            </div>
+            <volist name="list" id="vo">
+                <div class="comment-item" id="comment_{$vo.id}">
+                    <a name="{$vo.id}" id="{$vo.id}"></a>
+                    <div class="icon">
+                        <a href="/member/{$vo.uid}">
+                            <if condition="$vo.image neq ''">
+                                <img src="__ROOT__/Tpl/Public/image.php?width=48&amp;height=48&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.image}" alt="{$vo.username}">
+                            <else />
+                                <img src="__ROOT__/Tpl/Public/image.php?width=48&amp;height=48&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$Think.CONFIG.DEFAULT_AVATAR}" alt="{$vo.username}">
+                            </if>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <p style="" class="reply_user">
+                            <a class="to" style="font-size: 14px;" href="/member/{$vo.uid}">{$vo.username}</a>
+                            <span class="comment-time floor" style="float: right;">#{$key+1}</span>
+
+                            <span class="comment-time">
+                                <a data="{$vo.username}" title="回复{$vo.username}" class="go_at to" href="#" style="display: none;">回复</a>
+                                <a style="display: none;" data="{$vo.create_date}" title="查看会话" class="talk" href="#">查看对话</a>
+                                <abbr class="timeago reply_time" title="{$vo.create_date}" style="display: block;"></abbr>
+                            </span>
+                        </p>
+                        <p style="margin-top: 5px; line-height: 23px;">
+                            <span class="comment-text">{$vo.content}</span>
+                        </p>
+                    </div>
+                </div>
+            </volist>
+        </div>
+
+
+        <div class="reply_box comment-item" style="border: 0px; padding: 10px 16px 20px;">
+            <div class="icon">
+                <a href="/member/{$loginuid}">
+                    <img src="__ROOT__/Tpl/Public/image.php?width=48&amp;height=48&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$loginuimage}" alt="{$loginusername}">
+                </a>
+            </div>
+            <div class="content">
+                <form method="post" action="__APP__/Topic/saveReply" autocomplete="off" id="topic_reply_add" onsubmit="return verifyOnCreatingReply()">
+                    <div>
+                        <textarea id="reply_content" name="content" style="width: 460px; height: 90px; overflow: hidden;"></textarea>
+                        <div style="position: absolute; display: none; word-wrap: break-word; font-weight: normal; width: 460px; font-family: monospace; line-height: normal; font-size: 14px; padding: 8px;">&nbsp;</div></div>
+                    <div class="comment-submit" style="margin-top: 10px;">
+                        <input type="hidden" name="tid" value="{$tid}">
+                        <input class="submit" type="submit" value="回复">
+                        <a id="reply_box" name="reply_box"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<include file="Public:footer" />
+
+</body>
+</html>
