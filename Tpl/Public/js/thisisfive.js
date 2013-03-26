@@ -92,6 +92,16 @@ function verifyOnEditingProfile() {
         return true;
 }
 
+/*function deleteNotification(context, id) {
+    $.post(context + '/Notification/delete/',
+        { id: id },
+        function(data) {
+            $(".notification-count").text(data);
+            $("#notification_"+id).remove();
+    }).fail(function() { alert("error"); });
+}*/
+
+
 //textarea光标位置插入
 (function($){
     $.fn.extend({

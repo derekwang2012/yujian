@@ -13,7 +13,7 @@ class ReplyAction extends Action {
             if ($vo = $Reply->create()) {
                 $list = $Reply->add($data);
                 if ($list !== false) {
-                    $this->redirect('Topic/read/id/'.$_POST["tid"]);
+                    $this->redirect('topic/read/id/'.$_POST["tid"]);
 
                 } else {
                     $this->error('数据写入错误！');
@@ -23,7 +23,7 @@ class ReplyAction extends Action {
             }
         }
         else
-            $this->redirect('__APP__/User/login');
+            $this->redirect('__APP__/user/login');
     }
 
 

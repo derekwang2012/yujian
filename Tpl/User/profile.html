@@ -21,7 +21,7 @@
         </div>
 
         <div class="account_body" style="padding: 20px 30px;">
-            <form id="account_avatar" action="__APP__/User/saveImage" method="post" enctype="multipart/form-data" autocomplete="off">
+            <form id="account_avatar" action="__APP__/user/saveImage" method="post" enctype="multipart/form-data" autocomplete="off">
                 <div class="item" style="height: 100px;">
                     <label>我的头像</label>
                     <if condition="$image != ''">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </form>
-            <form id="account_profile" action="__APP__/User/edit" method="post" autocomplete="off" onsubmit="return verifyOnEditingProfile()">
+            <form id="account_profile" action="__APP__/user/edit" method="post" autocomplete="off" onsubmit="return verifyOnEditingProfile()">
                 <div class="item">
                     <label>昵称</label>
                     <input name="username" id="username" class="text" maxlength="15" type="text" value="{$Think.session.user_a}"/>

@@ -6,50 +6,38 @@
     <div class="main radius">
         <div class="home-header radius_top">
             <div style="padding: 5px; color: #808080;">
-                这是<strong>遇见</strong>，一个是简单，温暖de社区。
+                我的提醒 (<span class="notification-count">{$unviewedReplies}</span>条)
+                <span style="float: right; margin-right: 5px;"><a id="notifi_read_all" style="color: #808080;" href="#">全部清除</a></span>
             </div>
         </div>
 
-        <volist name="list" id="vo">
-            <div class="stream-item" id="topic_{$vo.tid}" tid="{$vo.tid}">
-                <div  class="mod status-item ">
-                    <div class="hd">
-                        <a class="icon" title="" href="/member/{$vo.uid}">
-                            <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.image}" />
-                        </a>
-                    </div>
-                    <div class="text">
-                        <span><a class="tag tag_{$vo.tag_num}" href="/tag/{$vo.tag}">{$vo.tag}</a><a class="web_link" href="__APP__/topic/read/id/{$vo.tid}">{$vo.topic}</a></span>
-                        <span onselectstart="return false;" title="快捷回复" class="icon-comments">
-                            <span class="comments-count">{$vo.replies}</span>
-                        </span>
+        <div style="padding: 10px">
+            <if condition="$unviewedReplies neq 0">
+            <volist name="notifications" id="vo">
+                <div class="stream-item" id="notification_{$vo.rcuid}" tid="{$vo.rcuid}">
+                    <div  class="mod status-item ">
+                        <div class="hd">
+                            <a class="icon" title="" href="/member/{$vo.uid}">
+                                <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.uimage}" />
+                            </a>
+                        </div>
+                        <div class="text">
+                            {$vo.usernmae}
+                            <span style="color: #808080">回复了</span>
+                            <a style="color: #4B8DC5;" href="__APP__/Topic/read/id/{$vo.tid}#{$vo.rid}">{$vo.topic}</a>
+                            <a title="清除这条提醒" class="notifi_read" style="color: #808080; margin-left: 20px;" href="__APP__/notification/delete/id/{$vo.rcuid}">X</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </volist>
-
-
-
-        <div style="padding: 15px 8px; text-align: center;">
-            <a style="text-decoration:none; color: #808080;" class="page_item" href="/?start=64">更多话题</a>
+            </volist>
+            <else />
+                没有提醒喔(⊙o⊙)
+            </if>
         </div>
+
     </div>
 
     <!--侧边栏-->
-    <div class="comment" style=" display: none;">
-        <div class="pane-toolbar">
-            <a id="comment_close" class="close" href="">×</a>
-        </div>
-        <div class="comments-items">
-            <div class="loading" style="display:none; text-align: center; padding: 20px 0px;">
-                <!--<div><img src="__ROOT__/img/loading.gif" /></div>-->
-                <div style="color: #808080;">加载中</div>
-            </div>
-            <div></div>
-            <div id="comments_list">
-            </div>
-        </div>
-    </div>
     <div class="sidebar">
 
         <div class="box" style="">
@@ -68,7 +56,7 @@
                         <div style="margin-top: 10px; color: #808080; word-wrap: break-word;overflow: hidden;">{$udesc}</div>
 
                     </div>
-                <else />
+                    <else />
                     欢迎来到 <b style="color: #4B8DC5;">五号社区</b>
                     <br>这里是一个简单、温暖的小社区。
                 </if>

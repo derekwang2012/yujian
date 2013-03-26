@@ -70,7 +70,6 @@ class TopicAction extends Action {
             $this->assign('unviewedReplies',$unviewedReplies);
         }
 
-
         $this->display();
     }
 
@@ -99,7 +98,7 @@ class TopicAction extends Action {
             $this->display();
         }
         else
-            $this->redirect('__APP__/User/login');
+            $this->redirect('__APP__/user/login');
     }
 
     public function save() {
@@ -115,7 +114,7 @@ class TopicAction extends Action {
             if ($vo = $Form->create()) {
                 $list = $Form->add($data);
                 if ($list !== false) {
-                    $this->redirect('/Topic/read/id/'.$list);
+                    $this->redirect('/topic/read/id/'.$list);
                 } else {
                     $this->error('数据写入错误！');
                 }
@@ -124,7 +123,7 @@ class TopicAction extends Action {
             }
         }
         else
-            $this->redirect('__APP__/User/login');
+            $this->redirect('__APP__/user/login');
     }
 
     public function saveReply() {
@@ -168,9 +167,20 @@ class TopicAction extends Action {
                             $ReplyToCertainUsers->add($data);
                         }
                     }
+                    else {
+                        $Topic = M("Topic");
+                        $ReplyToCertainUsers = M("ReplyToCertainUsers");
+
+                        $data['user_id'] = $Topic->where('id="'.$_POST["tid"].'"')->getField('user_id');
+                        $data['reply_id'] = $list;
+                        $data["topic_id"] = $_POST["tid"];
+
+                        $ReplyToCertainUsers->add($data);
+                    }
+
                     // -----------------
 
-                    $this->redirect('/Topic/read/id/'.$_POST["tid"]);
+                    $this->redirect('/topic/read/id/'.$_POST["tid"]);
 
                 } else {
                     $this->error('数据写入错误！');
@@ -180,7 +190,7 @@ class TopicAction extends Action {
             }
         }
         else
-            $this->redirect('__APP__/User/login');
+            $this->redirect('__APP__/user/login');
     }
 
 

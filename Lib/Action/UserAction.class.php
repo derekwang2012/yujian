@@ -5,7 +5,7 @@ class UserAction extends Action {
     // 显示注册页
     public function reg() {
         if(session('?user_a'))
-            $this->redirect('__APP__/Index/index');
+            $this->redirect('__APP__/index');
         else
             $this->display();
     }
@@ -13,7 +13,7 @@ class UserAction extends Action {
     // 显示登录页
     public function login() {
         if(session('?user_a'))
-            $this->redirect('__APP__/Index/index');
+            $this->redirect('__APP__/index');
         else
             $this->display();
     }
@@ -45,7 +45,7 @@ class UserAction extends Action {
             $this->display();
         }
         else
-            $this->redirect('__APP__/Index/index');
+            $this->redirect('__APP__/index');
     }
 
     // 登录动作
@@ -63,7 +63,7 @@ class UserAction extends Action {
                 session('user_a',$rset['username']);
                 session('user_id',$rset['id']);
 
-                $this->assign("jumpUrl","__APP__/Index");
+                $this->assign("jumpUrl","__APP__/index");
                 $this->success("登录成功");
             }else
             {
@@ -76,7 +76,7 @@ class UserAction extends Action {
     public function logout(){
         session('user_a',null);
         session('user_id',null);
-        $this->assign("jumpUrl","__APP__/Index");
+        $this->assign("jumpUrl","__APP__/index");
         $this->success("成功退出，欢迎下次登录！");
     }
 
@@ -120,7 +120,7 @@ class UserAction extends Action {
         session('user_a',$_POST["username"]);
         if($result !== false){
 
-            $this->redirect('__APP__/User/profile');
+            $this->redirect('__APP__/user/profile');
         }else{
             $this->error('数据更新失败！');
         }
@@ -149,7 +149,7 @@ class UserAction extends Action {
         }
 
         if($result !== false){
-            $this->redirect('__APP__/User/profile');
+            $this->redirect('__APP__/user/profile');
         }else{
             $this->error('图片保存失败！');
         }
@@ -161,7 +161,7 @@ class UserAction extends Action {
         if ($vo = $Form->create()) {
             $list = $Form->save();
             if ($list !== false) {
-                $this->success('数据更新成功！',U('User/index'));
+                $this->success('数据更新成功！',U('user/index'));
             } else {
                 $this->error("没有更新任何数据!");
             }

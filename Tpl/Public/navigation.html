@@ -5,10 +5,10 @@
         <div class="nav">
             <ul>
                 <li>
-                    <a href="__APP__/Index" style="color: #fff;">首页</a>
+                    <a href="__APP__/index" style="color: #fff;">首页</a>
                 </li>
                 <li>
-                    <a href="__APP__/Topic/add">+ 发表话题</a>
+                    <a href="__APP__/topic/add">+ 发表话题</a>
                 </li>
             </ul>
         </div>
@@ -18,25 +18,25 @@
                 <if condition="session('?user_a')">
                     <if condition="$unviewedReplies gt 0">
                         <li>
-                            <a title="{$unviewedReplies}条未读提醒" href="/notification" class="notifi-num">{$unviewedReplies}</a>
+                            <a title="{$unviewedReplies}条未读提醒" href="__APP__/notification/" class="notifi-num notification-count">{$unviewedReplies}</a>
                         </li>
                     </if>
                     <li>
 
-                        <a href="__APP__/User/profile">{$Think.session.user_a}</a>
+                        <a href="__APP__/user/profile">{$Think.session.user_a}</a>
                     </li>
                     <li>
-                        <a href="__APP__/User/profile">设置</a>
+                        <a href="__APP__/user/profile">设置</a>
                     </li>
                     <li>
-                        <a href="__APP__/User/logout">注销</a>
+                        <a href="__APP__/user/logout">注销</a>
                     </li>
                 <else />
                     <li>
-                        <a href="__APP__/User/reg">注册</a>
+                        <a href="__APP__/user/reg">注册</a>
                     </li>
                     <li>
-                        <a href="__APP__/User/login">登录</a>
+                        <a href="__APP__/user/login">登录</a>
                     </li>
                 </if>
 
