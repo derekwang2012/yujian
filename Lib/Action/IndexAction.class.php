@@ -7,7 +7,7 @@ class IndexAction extends Action {
     }
 
     public function index() {
-        $num = 10;
+        $num = C('LOAD_TOPIC_NUM');
 
         $Topic = M('Topic');
         // 原生query获取所有文章信息
@@ -49,6 +49,8 @@ class IndexAction extends Action {
     }
 
     public function more($id) {
+        $num = C('LOAD_TOPIC_NUM');
+
         $Topic = M('Topic');
         // 原生query获取所有文章信息
         $list = $Topic->query("
@@ -56,7 +58,7 @@ class IndexAction extends Action {
             SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
           LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
           ORDER BY tcreatedate desc
-          LIMIT $id");
+          LIMIT $num OFFSET $id");
 
         $this->ajaxReturn($list);
 

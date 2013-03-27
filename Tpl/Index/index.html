@@ -9,27 +9,29 @@
                 这是<strong>遇见</strong>，一个是简单，温暖de社区。
             </div>
         </div>
-
-        <volist name="list" id="vo">
-            <div class="stream-item" id="topic_{$vo.tid}" tid="{$vo.tid}">
-                <div  class="mod status-item ">
-                    <div class="hd">
-                        <a class="icon" title="" href="/member/{$vo.uid}">
-                            <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.image}" />
-                        </a>
-                    </div>
-                    <div class="text">
-                        <span><a class="tag tag_{$vo.tag_num}" href="/tag/{$vo.tag}">{$vo.tag}</a><a class="web_link" href="__APP__/topic/read/id/{$vo.tid}">{$vo.topic}</a></span>
-                        <span onselectstart="return false;" title="快捷回复" class="icon-comments">
-                            <span class="comments-count">{$vo.replies}</span>
-                        </span>
+        <div class="stream-section">
+            <volist name="list" id="vo">
+                <div class="stream-item" id="topic_{$vo.tid}" tid="{$vo.tid}">
+                    <div  class="mod status-item ">
+                        <div class="hd">
+                            <a class="icon" title="" href="/member/{$vo.uid}">
+                                <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.image}" />
+                            </a>
+                        </div>
+                        <div class="text">
+                            <span><a class="tag tag_{$vo.tag_num}" href="/tag/{$vo.tag}">{$vo.tag}</a><a class="web_link" href="__APP__/topic/read/id/{$vo.tid}">{$vo.topic}</a></span>
+                            <span onselectstart="return false;" title="快捷回复" class="icon-comments">
+                                <span class="comments-count">{$vo.replies}</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </volist>
-
+            </volist>
+        </div>
         <div style="padding: 15px 8px; text-align: center;">
-            <a style="text-decoration:none; color: #808080;" class="more-record" id="{$num}" href="javascript:void(0)" onclick="showMoreRecords('__APP__', {$num})">更多话题</a>
+            <span class="loading"><img src="__ROOT__/Tpl/Public/img/ajax-loading.gif" alt="加载更多话题"/></span>
+            <span class="end-of-topic">没有话题了</span>
+            <a style="text-decoration:none; color: #808080;" class="more-record" id="{$num}" href="javascript:void(0)" onclick="showMoreRecords('__ROOT__', '__APP__', {$num})">更多话题</a>
         </div>
     </div>
 

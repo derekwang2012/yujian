@@ -1110,3 +1110,7 @@ body {
     opacity: .85;
     filter: Alpha(opacity=85);
 }
+
+.loading, .end-of-topic {
+    display: none;
+}

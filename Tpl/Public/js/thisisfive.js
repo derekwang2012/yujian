@@ -101,19 +101,50 @@ function verifyOnEditingProfile() {
     }).fail(function() { alert("error"); });
 }*/
 
-function showMoreRecords(context, num) {
+function showMoreRecords(contextRoot, contextAPP, offset) {
+    var count = $(".more-record").attr('id');
+    $(".loading").show();
+    $(".more-record").hide();
+    $.post(contextAPP + '/index/more/',
+        { id: offset*count },
+        function(msg) {
+            var msg = eval("(" + msg + ")");
+            var html = "";
+            if(msg.length > 0) {
+                for(var i= 0; i<msg.length; i++) {
+                    html +=
+                        '<div class="stream-item" id="topic_'+msg[i].tid+'" tid="'+msg[i].tid+'">' +
+                            '<div  class="mod status-item ">'+
+                                '<div class="hd">'+
+                                    '<a class="icon" title="" href="/member/'+msg[i].uid+'">'+
+                                        '<img alt="{$vo.username}" title="'+msg[i].username+'" src="'+contextRoot+'/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image='+contextRoot+'/Tpl/Public/upload/'+msg[i].image+'" />'+
+                                    '</a>'+
+                                '</div>'+
+                                '<div class="text">'+
+                                    '<span><a class="tag tag_'+msg[i].tag_num+'" href="/tag/{$vo.tag}">'+msg[i].tag+'</a><a class="web_link" href="'+contextAPP+'/topic/read/id/'+msg[i].tid+'">'+msg[i].topic+'</a></span>'+
+                                    '<span onselectstart="return false;" title="快捷回复" class="icon-comments">'+
+                                        '<span class="comments-count">'+msg[i].replies+'</span>'+
+                                    '</span>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>';
+                }
 
-    $.post(context + '/index/more/',
-        { id: num },
-        function(data) {
-            $(".main").append(
-                '<volist name="'+data+'" id="vo">      <div class="stream-item" id="topic_{$vo.tid}" tid="{$vo.tid}">                        <div  class="mod status-item ">                            <div class="hd">                                <a class="icon" title="" href="/member/{$vo.uid}">                                    <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.image}" />                                </a>                            </div>                            <div class="text">                                <span><a class="tag tag_{$vo.tag_num}" href="/tag/{$vo.tag}">{$vo.tag}</a><a class="web_link" href="__APP__/topic/read/id/{$vo.tid}">{$vo.topic}</a></span>                                <span onselectstart="return false;" title="快捷回复" class="icon-comments">                                    <span class="comments-count">{$vo.replies}</span>                                </span>                            </div>                        </div>                    </div>                </volist>'
-            )
+                $(".stream-section").append(html);
+                count++;
+                $(".more-record").attr("id", count);
+                $(".more-record").show();
+            }
+            else {
+                $(".more-record").hide();
+                $(".end-of-topic").show();
+            }
+            $(".loading").hide();
+
 
         }).fail(function() {
             alert("error");
         });
-
 }
 
 

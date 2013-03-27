@@ -132,7 +132,7 @@ class UserAction extends Action {
         $Dao = M("User");
         $upload = new UploadFile();
         $upload->maxSize  = 3145728 ; // 设置附件上传大小
-        $upload->allowExts  = array('jpg', 'gif', 'png', 'jpeg');//设置上传类型限制
+        $upload->allowExts  = array('jpg', 'png', 'jpeg');//设置上传类型限制
         $upload->savePath =  './Tpl/Public/upload/'; //设置上传路径限制
         $upload->saveRule = time();//保存文件的命名规则，这里以时间戳为文件名
         $result = $upload->upload();//保存上传文件，获取上传信息
