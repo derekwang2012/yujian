@@ -106,10 +106,35 @@ class TopicAction extends Action {
         {
             $Form = M("Topic");
             $data["topic"] = $_POST["topic"];
-            $data["content"] = $_POST["content"];
+            $data["content"] = makelink($_POST["content"]);
             $data["tag"] = $_POST["tag_name"];
             $data["tag_num"] = mt_rand(0,14);
             $data["user_id"] = session('user_id');
+
+            /*$data['content'] = preg_replace_callback('#(?:https?://\S+)|(?:www.\S+)|(?:\S+\.\S+)#', function($arr)
+            {
+                if(strpos($arr[0], 'http://') !== 0)
+                {
+                    $arr[0] = 'http://' . $arr[0];
+                }
+                $url = parse_url($arr[0]);
+
+                // images
+                if(preg_match('#\.(png|jpg|gif)$#', $url['path']))
+                {
+                    return '<img src="'. $arr[0] . '" />';
+                }
+                // youtube
+                if(in_array($url['host'], array('www.youtube.com', 'youtube.com'))
+                    && $url['path'] == '/watch'
+                    && isset($url['query']))
+                {
+                    parse_str($url['query'], $query);
+                    return sprintf('<iframe class="embedded-video" width="550" height="400" src="http://www.youtube.com/embed/%s" allowfullscreen></iframe>', $query['v']);
+                }
+                //links
+                return sprintf('<a href="%1$s">%1$s</a>', $arr[0]);
+            }, $data['content']);*/
 
             if ($vo = $Form->create()) {
                 $list = $Form->add($data);

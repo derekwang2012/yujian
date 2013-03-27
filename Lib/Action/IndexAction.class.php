@@ -7,13 +7,16 @@ class IndexAction extends Action {
     }
 
     public function index() {
+        $num = 10;
+
         $Topic = M('Topic');
         // 原生query获取所有文章信息
         $list = $Topic->query("
           SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
             SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
           LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
-          ORDER BY tcreatedate desc");
+          ORDER BY tcreatedate desc
+          LIMIT $num");
 
         $this->list =  $list;
         /*$list = $Topic
@@ -23,7 +26,7 @@ class IndexAction extends Action {
             ->group('t.id')
             ->order('t.create_date desc' )
             ->select();*/
-
+        $this->assign('num',$num);
 
         if(session('?user_id')) {
             // 查询登录用户信息
@@ -45,5 +48,17 @@ class IndexAction extends Action {
         $this->display();
     }
 
+    public function more($id) {
+        $Topic = M('Topic');
+        // 原生query获取所有文章信息
+        $list = $Topic->query("
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          ORDER BY tcreatedate desc
+          LIMIT $id");
 
+        $this->ajaxReturn($list);
+
+    }
 }

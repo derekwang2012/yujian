@@ -101,6 +101,21 @@ function verifyOnEditingProfile() {
     }).fail(function() { alert("error"); });
 }*/
 
+function showMoreRecords(context, num) {
+
+    $.post(context + '/index/more/',
+        { id: num },
+        function(data) {
+            $(".main").append(
+                '<volist name="'+data+'" id="vo">      <div class="stream-item" id="topic_{$vo.tid}" tid="{$vo.tid}">                        <div  class="mod status-item ">                            <div class="hd">                                <a class="icon" title="" href="/member/{$vo.uid}">                                    <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.image}" />                                </a>                            </div>                            <div class="text">                                <span><a class="tag tag_{$vo.tag_num}" href="/tag/{$vo.tag}">{$vo.tag}</a><a class="web_link" href="__APP__/topic/read/id/{$vo.tid}">{$vo.topic}</a></span>                                <span onselectstart="return false;" title="快捷回复" class="icon-comments">                                    <span class="comments-count">{$vo.replies}</span>                                </span>                            </div>                        </div>                    </div>                </volist>'
+            )
+
+        }).fail(function() {
+            alert("error");
+        });
+
+}
+
 
 //textarea光标位置插入
 (function($){
