@@ -43,12 +43,6 @@ class NotificationAction extends Action {
         $result = $Dao->save($data);
 
         $this->redirect('/notification');
-
-        /*if($result !== false){
-            echo $unviewedReplies;
-        }else{
-            echo '提醒删除失败！';
-        }*/
     }
 
     public function deleteAll() {

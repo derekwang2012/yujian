@@ -236,7 +236,8 @@ $(function(){
     }
     function complete(data){
         if(data.status==1){
-            window.location = $("#app").val() + data.info;
+            $('.infoMessage').html(data.info).show();
+            $('.errorMessage').html(data.info).hide();
         }else{
             $('.errorMessage').html(data.info).show();
             return false;

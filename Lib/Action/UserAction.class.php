@@ -202,7 +202,24 @@ class UserAction extends Action {
 
     // 保存新密码
     public function updatePassword() {
+        $w['id']=array('eq',session('user_id'));
+        $rset = M("User")->where($w)->find();
 
+        if($rset['password'] != $_POST["oldPassword"]){
+            $this->ajaxReturn('','旧密码错误！',0);
+
+            return false;
+        }
+        else if(strlen($_POST["newPassword"]) < 4 || strlen($_POST["newPassword"]) > 20) {
+            $this->ajaxReturn('','密码长度4-20！',0);
+
+            return false;
+        }
+        else {
+            $data['password'] = $_POST["newPassword"];
+            $result = M("User")->where($w)->save($data);
+            $this->ajaxReturn('','密码保存成功',1);
+        }
     }
 }
 ?>

@@ -1115,7 +1115,7 @@ body {
     display: none;
 }
 
-.errorMessage {
+.errorMessage, .infoMessage {
     background-color: rgb(250, 255, 189);;
     color: red;
     font-weight: bold;
