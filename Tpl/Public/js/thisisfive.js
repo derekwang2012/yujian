@@ -77,21 +77,6 @@ function verifyOnCreatingReply() {
     }
 }
 
-// 验证用户昵称
-function verifyOnEditingProfile() {
-    var reg=/^[a-zA-Z0-9_\u4e00-\u9fa5]+$/ig;
-
-    var username = $("#username");
-    var usernameVal = $.trim(username.val());
-
-    if(!reg.test(usernameVal)) {
-        alert("用户只能包含汉字、数字、字母和下划线");
-        return false;
-    }
-    else
-        return true;
-}
-
 // 显示更多话题
 function showMoreRecords(contextRoot, contextAPP) {
     var count = $(".more-record").attr('id');
@@ -245,3 +230,38 @@ $(function(){
     }
 });
 
+// Ajax更新用户信息
+$(function(){
+    $('#account_profile').ajaxForm({
+        beforeSubmit:  checkForm,   // pre-submit callback
+        success:       complete,    // post-submit callback
+        dataType: 'json'
+    });
+    function checkForm(){
+        var html = "";
+        var reg=/^[a-zA-Z0-9_\u4e00-\u9fa5]+$/ig;
+
+        var username = $("#username");
+        var usernameVal = $.trim(username.val());
+
+        if(!reg.test(usernameVal)) {
+            html = "用户只能包含汉字、数字、字母和下划线";
+
+        }
+        if(html != '') {
+            $('.infoMessage').hide();
+            $('.errorMessage').html(html).show();
+            return false;
+        }
+
+    }
+    function complete(data){
+        if(data.status==1){
+            $('.infoMessage').html(data.info).show();
+            $('.errorMessage').html(data.info).hide();
+        }else{
+            $('.errorMessage').html(data.info).show();
+            return false;
+        }
+    }
+});

@@ -137,20 +137,19 @@ class UserAction extends Action {
         }
     }
 
-    // 写入用户动作
+    // 更新用户动作
     public function edit() {
         $Dao = M("User");
 
         // 需要更新的数据
-        $data['username'] = $_POST["username"];
-        $data['description'] = $_POST["description"];
+        $data['username'] = trim($_POST["username"]);
+        $data['description'] = trim($_POST["description"]);
         // 更新的条件
         $condition['id'] = session('user_id');
         $result = $Dao->where($condition)->save($data);
-        session('user_a',$_POST["username"]);
+        session('user_a',trim($_POST["username"]));
         if($result !== false){
-
-            $this->redirect('__APP__/user/profile');
+            $this->ajaxReturn('','信息更新成功!',1);
         }else{
             $this->error('数据更新失败！');
         }
