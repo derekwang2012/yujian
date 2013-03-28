@@ -92,15 +92,7 @@ function verifyOnEditingProfile() {
         return true;
 }
 
-/*function deleteNotification(context, id) {
-    $.post(context + '/Notification/delete/',
-        { id: id },
-        function(data) {
-            $(".notification-count").text(data);
-            $("#notification_"+id).remove();
-    }).fail(function() { alert("error"); });
-}*/
-
+// 显示更多话题
 function showMoreRecords(contextRoot, contextAPP) {
     var count = $(".more-record").attr('id');
     $(".loading").show();
@@ -157,6 +149,8 @@ function showMoreRecords(contextRoot, contextAPP) {
 }
 
 
+
+
 //textarea光标位置插入
 (function($){
     $.fn.extend({
@@ -186,4 +180,29 @@ function showMoreRecords(contextRoot, contextAPP) {
         }
     })
 })(jQuery);
+
+// Ajax用户登录
+$(function(){
+    $('#loginForm').ajaxForm({
+        beforeSubmit:  checkForm,   // pre-submit callback
+        success:       complete,    // post-submit callback
+        dataType: 'json'
+    });
+    function checkForm(){
+        if( '' == $.trim($('#email').val())){
+            $('.errorMessage').html('用户名不能为空！').show();
+            $('#email').focus();
+            return false;
+        }
+
+    }
+    function complete(data){
+        if(data.status==1){
+            window.location = $("#app").val() + data.info;
+        }else{
+            $('.errorMessage').html(data.info).show();
+            return false;
+        }
+    }
+});
 

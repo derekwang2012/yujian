@@ -7,8 +7,8 @@
 <div class="container">
     <div class="reg_form">
 
-        <form action="__APP__/user/dologin" method="POST">
-            <div class="reg_title">登录</div>
+        <form action="__APP__/user/dologin" method="POST" id="loginForm">
+            <div class="reg_title"><strong>登录</strong></div>
 
             <div class="">邮箱</div>
 
@@ -21,9 +21,12 @@
             <div>
                 <input tabindex="2" type="password" class="title" name="password" value="" />
             </div>
-
+            <div class="errorMessage"></div>
             <div class="reg_input">
+                <input type="hidden" name="ajax" value="1">
+                <input type="hidden" name="app" id="app" value="__APP__">
                 <input tabindex="4" type="submit" class="reg_bottom" value="登录"/>
+
             </div>
         </form>
     </div>

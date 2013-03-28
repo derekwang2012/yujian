@@ -1114,3 +1114,12 @@ body {
 .loading, .end-of-topic {
     display: none;
 }
+
+.errorMessage {
+    background-color: rgb(250, 255, 189);;
+    color: red;
+    font-weight: bold;
+    padding: 5px;
+    width: 222px;
+    display: none;
+}

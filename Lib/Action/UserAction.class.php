@@ -56,17 +56,19 @@ class UserAction extends Action {
         $rset = M("User")->where($w)->find();
 
         if(!$rset){
-            $this->error('邮箱不存在，请检查！');
+            $this->ajaxReturn('','邮箱不存在！',0);
+
             return false;
         }else{
             if($rset['password']==$password){
                 session('user_a',$rset['username']);
                 session('user_id',$rset['id']);
 
-                $this->redirect('/index');
+                $this->ajaxReturn('','/index',1);
 
             }else {
-                $this->error('密码错误');
+                $this->ajaxReturn('','密码错误！',0);
+
             }
         }
     }
