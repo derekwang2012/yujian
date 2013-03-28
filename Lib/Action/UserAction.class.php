@@ -48,6 +48,36 @@ class UserAction extends Action {
             $this->redirect('__APP__/index');
     }
 
+    // 修改密码页
+    public function password() {
+        if(session('?user_a'))
+        {
+            $User = M("User");
+
+            // 构造查询条件
+            $condition['id'] = session('user_id');
+            // 查询数据
+            $list = $User->where($condition)->find();
+
+            if($list['image'] != "")
+                $this->assign('image',$list['image']);
+            else
+                $this->assign('image',C("DEFAULT_AVATAR"));
+
+            $this->assign('username',$list['username']);
+            $this->assign('description',$list['description']);
+
+            // 查询所有回复中有无提到登录用户
+            $Notification = M('ReplyToCertainUsers');
+            $unviewedReplies = $Notification->where('user_id = ' . session('user_id') . ' AND ' . 'viewed = 0')->count();
+            $this->assign('unviewedReplies',$unviewedReplies);
+
+            $this->display();
+        }
+        else
+            $this->redirect('__APP__/index');
+    }
+
     // 登录动作
     public function dologin(){
         $email = $_POST["email"];
@@ -168,6 +198,11 @@ class UserAction extends Action {
         } else {
             $this->error($Form->getError());
         }
+    }
+
+    // 保存新密码
+    public function updatePassword() {
+
     }
 }
 ?>

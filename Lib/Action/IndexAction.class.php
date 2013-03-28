@@ -20,7 +20,7 @@ class IndexAction extends Action {
 
         $this->list =  $list;
 
-        $this->assign('num',10);
+        $this->assign('num',$num);
 
         if(session('?user_id')) {
             // 查询登录用户信息

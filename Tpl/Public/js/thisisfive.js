@@ -206,3 +206,41 @@ $(function(){
     }
 });
 
+// Ajax更改密码
+$(function(){
+    $('#changePasswordForm').ajaxForm({
+        beforeSubmit:  checkForm,   // pre-submit callback
+        success:       complete,    // post-submit callback
+        dataType: 'json'
+    });
+    function checkForm(){
+        var html = "";
+        // 检查旧密码不为空
+        if( '' == $('#oldPassword').val()){
+            html += '旧密码不能为空！<br/>'
+        }
+        if( '' == $('#newPassword').val()){
+            html += '新密码不能为空！<br/>'
+        }
+        if( $('#newPassword').val() != $('#confirmNewPassword').val()) {
+            html += '两次密码不一致！<br/>'
+        }
+        if( $('#newPassword').val().length < 4 || $('#newPassword').val().length > 20 ) {
+            html += '密码长度4-20！<br/>'
+        }
+        if(html != '') {
+            $('.errorMessage').html(html).show();
+            return false;
+        }
+
+    }
+    function complete(data){
+        if(data.status==1){
+            window.location = $("#app").val() + data.info;
+        }else{
+            $('.errorMessage').html(data.info).show();
+            return false;
+        }
+    }
+});
+

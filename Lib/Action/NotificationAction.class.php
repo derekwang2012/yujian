@@ -26,7 +26,7 @@ class NotificationAction extends Action {
             // 原生query
             $notifications = $Topic->query("SELECT rcu.id as rcuid, t.topic as topic, t.id as tid, u.username as usernmae, u.id as uid, u.image as uimage, r.id as rid
                 FROM thisisfive_reply_to_certain_users rcu, thisisfive_topic t, thisisfive_user u, thisisfive_reply r
-                WHERE rcu.topic_id = t.id AND rcu.reply_id = r.id AND r.user_id = u.id AND rcu.viewed = 0");
+                WHERE rcu.topic_id = t.id AND rcu.reply_id = r.id AND r.user_id = u.id AND rcu.viewed = 0 AND rcu.user_id = " . session('user_id'));
 
             $this->notifications =  $notifications;
         }
@@ -49,5 +49,16 @@ class NotificationAction extends Action {
         }else{
             echo '提醒删除失败！';
         }*/
+    }
+
+    public function deleteAll() {
+        $Dao = M("ReplyToCertainUsers");
+
+        $condition['user_id'] = session('user_id');
+        $data['viewed'] = 1;
+        $result = $Dao->where($condition)->save($data);
+
+        $this->redirect('/notification');
+
     }
 }
