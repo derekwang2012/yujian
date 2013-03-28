@@ -101,14 +101,16 @@ function verifyOnEditingProfile() {
     }).fail(function() { alert("error"); });
 }*/
 
-function showMoreRecords(contextRoot, contextAPP, offset) {
+function showMoreRecords(contextRoot, contextAPP) {
     var count = $(".more-record").attr('id');
     $(".loading").show();
     $(".more-record").hide();
     $.post(contextAPP + '/index/more/',
-        { id: offset*count },
+        { id: count },
         function(msg) {
             var msg = eval("(" + msg + ")");
+
+
             var html = "";
             if(msg.length > 0) {
                 for(var i= 0; i<msg.length; i++) {
@@ -131,9 +133,16 @@ function showMoreRecords(contextRoot, contextAPP, offset) {
                 }
 
                 $(".stream-section").append(html);
-                count++;
+                count = parseInt(count) + 10;
                 $(".more-record").attr("id", count);
-                $(".more-record").show();
+
+                if(msg.length <= 10) {
+                    $(".more-record").hide();
+                    $(".end-of-topic").show();
+                }
+                else {
+                    $(".more-record").show();
+                }
             }
             else {
                 $(".more-record").hide();

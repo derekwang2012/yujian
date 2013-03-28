@@ -19,14 +19,8 @@ class IndexAction extends Action {
           LIMIT $num");
 
         $this->list =  $list;
-        /*$list = $Topic
-            ->table('thisisfive_topic t, thisisfive_user u, thisisfive_reply r')
-            ->where('t.user_id = u.id AND t.id = r.topic_id')
-            ->field('t.id as id, t.topic as topic, t.tag as tag, t.tag_num as tag_num, u.id as uid, u.username as username, u.image as image, count(r.topic_id) as replies')
-            ->group('t.id')
-            ->order('t.create_date desc' )
-            ->select();*/
-        $this->assign('num',$num);
+
+        $this->assign('num',10);
 
         if(session('?user_id')) {
             // 查询登录用户信息

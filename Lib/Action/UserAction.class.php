@@ -63,10 +63,9 @@ class UserAction extends Action {
                 session('user_a',$rset['username']);
                 session('user_id',$rset['id']);
 
-                $this->assign("jumpUrl","__APP__/index");
-                $this->success("登录成功");
-            }else
-            {
+                $this->redirect('/index');
+
+            }else {
                 $this->error('密码错误');
             }
         }
@@ -76,8 +75,7 @@ class UserAction extends Action {
     public function logout(){
         session('user_a',null);
         session('user_id',null);
-        $this->assign("jumpUrl","__APP__/index");
-        $this->success("成功退出，欢迎下次登录！");
+        $this->redirect('/index');
     }
 
     // 写入用户动作
