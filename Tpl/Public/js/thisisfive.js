@@ -43,39 +43,26 @@ $(document).ready(function() {
         }
 
     });
+
+    // 点击喜欢
+    $("#likeable").click(function () {
+        var contextAPP = $(this).data("context");
+        $.post(contextAPP + '/topic/like/',
+            { id: $(this).data("id") },
+            function(msg) {
+                var msg = eval("(" + msg + ")");
+                if(msg.status == 1) {
+                    $(".peopleLikes").text(msg.data);
+                }
+                else {
+                    $(".tools a span").text(msg.data)
+                }
+            }).fail(function() {
+                alert("error");
+            });
+    });
+
 });
-
-// 验证帖子标题不能空
-function verifyOnCreatingTopic() {
-
-    var topic = $("#topic");
-    var topicVal = $.trim(topic.val());
-
-    if(topicVal == null || topicVal == '' || topicVal.length < 5) {
-        alert("标题不少于5个字");
-        topic.focus();
-        return false
-    }
-    else {
-        return true
-    }
-}
-
-// 验证回帖内容不能空
-function verifyOnCreatingReply() {
-
-    var reply = $("#reply_content");
-    var replyVal = $.trim(reply.val());
-
-    if(replyVal == null || replyVal == '') {
-        alert("回帖内容不能空");
-        reply.focus();
-        return false
-    }
-    else {
-        return true
-    }
-}
 
 // 显示更多话题
 function showMoreRecords(contextRoot, contextAPP) {
@@ -113,7 +100,7 @@ function showMoreRecords(contextRoot, contextAPP) {
                 count = parseInt(count) + 10;
                 $(".more-record").attr("id", count);
 
-                if(msg.length <= 10) {
+                if(msg.length < 10) {
                     $(".more-record").hide();
                     $(".end-of-topic").show();
                 }
@@ -132,9 +119,6 @@ function showMoreRecords(contextRoot, contextAPP) {
             alert("error");
         });
 }
-
-
-
 
 //textarea光标位置插入
 (function($){
@@ -259,6 +243,131 @@ $(function(){
         if(data.status==1){
             $('.infoMessage').html(data.info).show();
             $('.errorMessage').html(data.info).hide();
+            $('.usernameHolder').text(data.data)
+        }else{
+            $('.errorMessage').html(data.info).show();
+            return false;
+        }
+    }
+});
+
+// Ajax上传用户图片
+$(function(){
+    $('#account_avatar').ajaxForm({
+        beforeSubmit:  checkForm,   // pre-submit callback
+        success:       complete,    // post-submit callback
+        dataType: 'json'
+    });
+    function checkForm(){
+        var html = "";
+
+        if( ""==$("#file").val()) {
+            html = "请选择你的图片！";
+        }
+        if(html != '') {
+            $('.infoMessage').hide();
+            $('.errorMessage').html(html).show();
+            return false;
+        }
+    }
+    function complete(data){
+        if(data.status==1){
+            $('.infoMessage').html(data.info).show();
+            $('.errorMessage').html(data.info).hide();
+            window.location = $("#app").val() + data.data;
+        }else{
+            $('.errorMessage').html(data.info).show();
+            return false;
+        }
+    }
+});
+
+
+// Ajax验证回帖内容不能空
+$(function(){
+    $('#topic_reply_add').ajaxForm({
+        beforeSubmit:  checkForm,   // pre-submit callback
+        success:       complete,    // post-submit callback
+        dataType: 'json'
+    });
+    function checkForm(){
+        var html = "";
+        var reply = $("#reply_content");
+        var replyVal = $.trim(reply.val());
+
+        if(replyVal == null || replyVal == '') {
+            html = "回帖内容不能空！";
+        }
+        if(html != '') {
+            $('.infoMessage').hide();
+            $('.errorMessage').html(html).show();
+            return false;
+        }
+    }
+    function complete(data){
+        if(data.status==1){
+            window.location = $("#app").val() + '/topic/read/id/' + data.data;
+        }else{
+            $('.errorMessage').html(data.info).show();
+            return false;
+        }
+    }
+});
+
+// Ajax注册用户
+$(function(){
+    $('#regForm').ajaxForm({
+        beforeSubmit:  checkForm,   // pre-submit callback
+        success:       complete,    // post-submit callback
+        dataType: 'json'
+    });
+    function checkForm(){
+        var html = "";
+        if(html != '') {
+            $('.infoMessage').hide();
+            $('.errorMessage').html(html).show();
+            return false;
+        }
+    }
+    function complete(data){
+        if(data.status==1){
+            $('.infoMessage').html(data.info).show();
+            $('.errorMessage').html(data.info).hide();
+            window.location = $("#app").val() + data.data;
+        }else{
+            $('.errorMessage').html(data.info).show();
+            return false;
+        }
+    }
+});
+
+// Ajax验证帖子标题不能空
+$(function(){
+    $('#topic_add').ajaxForm({
+        beforeSubmit:  checkForm,   // pre-submit callback
+        success:       complete,    // post-submit callback
+        dataType: 'json'
+    });
+    function checkForm(){
+        var html = "";
+        var topic = $("#topic");
+        var topicVal = $.trim(topic.val());
+
+        if(topicVal == null || topicVal == '' || topicVal.length < 5) {
+            html = "标题不少于5个字！";
+        }
+
+        if(html != '') {
+            $('.infoMessage').hide();
+            $('.errorMessage').html(html).show();
+            return false;
+        }
+    }
+    function complete(data){
+        if(data.status==1){
+            $('.infoMessage').html(data.info).show();
+            $('.errorMessage').html(data.info).hide();
+            window.location = $("#app").val() + '/topic/read/id/' + data.data;
         }else{
             $('.errorMessage').html(data.info).show();
             return false;

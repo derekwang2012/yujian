@@ -128,12 +128,12 @@ class UserAction extends Action {
             session('user_id',$id);
 
             if ($return) {
-                $this->success('保存成功！');
+                $this->ajaxReturn('/index','保存成功！',1);
             } else {
-                $this->error('数据写入错误！');
+                $this->ajaxReturn('','数据写入错误！',0);
             }
         } else {
-            $this->error($UserD->getError());
+            $this->ajaxReturn('',$UserD->getError(),0);
         }
     }
 
@@ -149,7 +149,7 @@ class UserAction extends Action {
         $result = $Dao->where($condition)->save($data);
         session('user_a',trim($_POST["username"]));
         if($result !== false){
-            $this->ajaxReturn('','信息更新成功!',1);
+            $this->ajaxReturn(session('user_a'),'信息更新成功!',1);
         }else{
             $this->error('数据更新失败！');
         }
@@ -168,7 +168,7 @@ class UserAction extends Action {
 
         if( !$result ) {
             if ( $upload->getErrorMsg() != '没有选择上传文件') {//这个判断是用户不上传头像时不报错，通过。
-                $this->error($upload->getErrorMsg());
+                $this->ajaxReturn('',$upload->getErrorMsg(),0);
             }
         }
         else {
@@ -178,9 +178,10 @@ class UserAction extends Action {
         }
 
         if($result !== false){
-            $this->redirect('__APP__/user/profile');
+            $this->ajaxReturn('/user/profile','图片保存成功',1);
         }else{
-            $this->error('图片保存失败！');
+            $this->ajaxReturn('','图片保存失败',0);
+
         }
     }
 

@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="reg_form">
-        <form action="__APP__/user/save" method="POST" autocomplete="off">
+        <form action="__APP__/user/save" method="POST" autocomplete="off" id="regForm">
             <div class="reg_title">注册</div>
             <div class="reg_memo">欢迎来到遇见！这里是一个简单、温暖的小社区。</div>
 
@@ -34,7 +34,12 @@
                 <input tabindex="4" type="text" class="title" name="username" maxlength="20" value="" />
             </div>
 
+            <div class="width380 errorMessage"></div>
+            <div class="width380 infoMessage"></div>
+
             <div class="reg_input">
+                <input type="hidden" name="ajax" value="1">
+                <input type="hidden" name="app" id="app" value="__APP__">
                 <input tabindex="5" type="submit" class="reg_bottom" value="创建用户"/>
             </div>
         </form>

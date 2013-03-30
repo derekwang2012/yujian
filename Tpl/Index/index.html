@@ -15,7 +15,11 @@
                     <div  class="mod status-item ">
                         <div class="hd">
                             <a class="icon" title="" href="/member/{$vo.uid}">
-                                <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.image}" />
+                                <if condition="$vo.image != ''">
+                                    <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.image}" />
+                                <else />
+                                    <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/default_avatar.png" />
+                                </if>
                             </a>
                         </div>
                         <div class="text">
@@ -37,7 +41,6 @@
 
     <!--侧边栏-->
     <div class="sidebar">
-
         <div class="box" style="">
             <div>
                 <if condition="session('?user_a')">
@@ -65,13 +68,9 @@
 
         <div class="box" style="margin-top: 20px;">
             <div>
-
-                <a href="/about" style="color: #808080; margin-right: 10px;">关于</a>
-
+                <span style="color: #808080; margin-right: 10px;">现在网络发达了，但充满了铜臭味，很难找到一个干净，简单，温暖的地方聊天了，遇见就是本着简单和温暖的想法来创建的。</span>
             </div>
         </div>
-
-
     </div>
 </div>
 

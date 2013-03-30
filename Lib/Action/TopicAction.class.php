@@ -12,7 +12,7 @@ class TopicAction extends Action {
         $result = $Topic
             ->table('thisisfive_topic t, thisisfive_user u')
             ->where('t.id = ' . $id . ' AND t.user_id = u.id')
-            ->field('t.topic as topic, t.content as content, t.tag as tag, t.tag_num as tag_num, t.create_date as create_date, t.hits as hits, u.id as uid, u.username as username, u.image as image, u.description as description')
+            ->field('t.topic as topic, t.content as content, t.tag as tag, t.tag_num as tag_num, t.create_date as create_date, t.hits as hits, t.likes as likes, u.id as uid, u.username as username, u.image as image, u.description as description')
             ->order('t.create_date desc' )
             ->select();
 
@@ -23,6 +23,7 @@ class TopicAction extends Action {
         $this->assign('ttagnum',$result[0]['tag_num']);
         $this->assign('tcreatedate',$result[0]['create_date']);
         $this->assign('thits',$result[0]['hits']);
+        $this->assign('tlike',$result[0]['likes']);
         $this->assign('uid',$result[0]['uid']);
         $this->assign('username',$result[0]['username']);
         $this->assign('udesc',$result[0]['description']);
@@ -139,12 +140,12 @@ class TopicAction extends Action {
             if ($vo = $Form->create()) {
                 $list = $Form->add($data);
                 if ($list !== false) {
-                    $this->redirect('/topic/read/id/'.$list);
+                    $this->ajaxReturn($list,'数据写入成功！',1);
                 } else {
-                    $this->error('数据写入错误！');
+                    $this->ajaxReturn('','数据写入错误！',0);
                 }
             } else {
-                $this->error($Form->getError());
+                $this->ajaxReturn('',$Form->getError(),0);
             }
         }
         else
@@ -204,19 +205,39 @@ class TopicAction extends Action {
                     }
 
                     // -----------------
-
-                    $this->redirect('/topic/read/id/'.$_POST["tid"]);
+                    $this->ajaxReturn($_POST["tid"],'回复成功！',1);
+                    /*$this->redirect('/topic/read/id/'.$_POST["tid"]);*/
 
                 } else {
-                    $this->error('数据写入错误！');
+                    $this->ajaxReturn('','数据写入错误！',0);
                 }
             } else {
-                $this->error($Reply->getError());
+                $this->ajaxReturn('',$Reply->getError(),0);
             }
         }
         else
             $this->redirect('__APP__/user/login');
     }
 
+    public function like($id) {
+        $ip = get_client_ip();
+        $Dao = M('Topic');
+        $TopicIp = M("TopicIp");
 
+        $sameIpCountOnTopic = $TopicIp->where('topic_id = ' . $id . ' AND ip = "' . $ip . '"')->count();
+
+        if($sameIpCountOnTopic == 0) {
+            $result = $Dao->where('id = ' . $id)->setInc('likes');
+            $data['topic_id'] = $id;
+            $data['ip'] = $ip;
+            $TopicIp->add($data);
+
+            $likes = $Dao->where('id = ' . $id)->getField('likes');
+
+            $this->ajaxReturn($likes, '', 1);
+        }
+        else {
+            $this->ajaxReturn('你已经喜欢过了', '', 0);
+        }
+    }
 }

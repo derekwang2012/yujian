@@ -14,7 +14,7 @@
                 创建话题
             </div>
             <div class="add" >
-                <form method="post" action="__APP__/topic/save" id="topic_add" autocomplete="off" onsubmit="return verifyOnCreatingTopic()">
+                <form method="post" action="__APP__/topic/save" id="topic_add" autocomplete="off">
                     <div class="item">
                         <input name="topic" id="topic" class="text" maxlength="30" type="text" value=""/><span style="color: #808080; margin-left: 5px; font-size: 12px;">标题不少于5个字</span>
                     </div>
@@ -29,8 +29,14 @@
                         </div>
                     </div>
                     <div>
+                        <input type="hidden" name="ajax" value="1">
+                        <input type="hidden" name="app" id="app" value="__APP__">
+                        <div class="width130 errorMessage"></div>
+                        <div class="width130 infoMessage"></div>
                         <input class="reg_bottom" type="submit" value="创建" />
+
                     </div>
+
                 </form>
             </div>
         </div>

@@ -1127,3 +1127,55 @@ body {
 .width380 {
     width: 380px;
 }
+
+.width120 {
+    width: 120px;
+    margin-left: 60px;
+}
+
+.width130 {
+    width: 130px;
+}
+
+.marginLeft60 {
+    margin-left: 60px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.noLoginReply {
+    text-align: center;
+    color: #808080;
+    margin-top: 7px;
+}
+
+.tools {
+    text-align: right;
+    height: 16px;
+    overflow: hidden;
+}
+
+.tools a:link, .topics .tools a:visited {
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.tools a:link i, .topics .tools a:visited i {
+    position: relative;
+    margin-bottom: -1px;
+}
+
+.small_like {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/icons.png") 0px -96px no-repeat;
+}
+
+.tools span {
+    color: #999;
+    font-size: 13px;
+    line-height: 18px;
+}

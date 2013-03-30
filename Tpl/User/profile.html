@@ -11,7 +11,7 @@
                 <if condition="$image != ''">
                     <img src="__ROOT__/Tpl/Public/image.php?width=30&amp;height=30&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$image}" alt="{$username}" />
                 </if>
-                {$Think.session.user_a}的设置
+                <span class="usernameHolder">{$Think.session.user_a}</span>的设置
             </h1>
 
             <ul class="tabs clearfix">
@@ -21,6 +21,8 @@
         </div>
 
         <div class="account_body" style="padding: 20px 30px;">
+            <div class="width380 errorMessage"></div>
+            <div class="width380 infoMessage"></div>
             <form id="account_avatar" action="__APP__/user/saveImage" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="item" style="height: 100px;">
                     <label>我的头像</label>
@@ -47,8 +49,6 @@
                     <label>简介</label>
                     <textarea maxlength="50" rows="3" name="description">{$description}</textarea>
                 </div>
-                <div class="item width380 errorMessage"></div>
-                <div class="item width380 infoMessage"></div>
                 <div class="submit_area">
                     <input type="hidden" name="ajax" value="1">
                     <input type="hidden" name="app" id="app" value="__APP__">
