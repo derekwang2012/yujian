@@ -221,5 +221,56 @@ class UserAction extends Action {
             $this->ajaxReturn('','密码保存成功',1);
         }
     }
+
+    // 显示特定用户的话题
+    public function t($id) {
+        $num = C('LOAD_TOPIC_NUM');
+
+        $Topic = M('Topic');
+        // 原生query获取所有文章信息
+        $list = $Topic->query("
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          WHERE u.id = ".$id."
+          ORDER BY tcreatedate desc
+          LIMIT $num");
+
+        $this->list =  $list;
+
+        $this->assign('num',$num);
+        $this->assign('userId',$id);
+
+
+        // 查询用户信息
+        $User = M("User");
+        $condition['id'] = $id;
+        $list = $User->where($condition)->find();
+        $this->assign('udesc',$list['description']);
+        $this->assign('usrname',$list['username']);
+        if($list['image'] != "")
+            $this->assign('image',$list['image']);
+        else
+            $this->assign('image',C("DEFAULT_AVATAR"));
+
+        $this->display();
+    }
+
+    public function more($id, $userId) {
+        $num = C('LOAD_TOPIC_NUM');
+
+        $Topic = M('Topic');
+        // 原生query获取所有文章信息
+        $list = $Topic->query("
+          SELECT u.image, u.username, tid, topic, tag, tag_num, uid, replies FROM (
+            SELECT t.id as tid, t.topic as topic, t.tag as tag, t.tag_num as tag_num, t.user_id as uid, t.create_date as tcreatedate, COUNT(r.topic_id) as replies FROM thisisfive_reply r RIGHT JOIN thisisfive_topic t ON r.topic_id = t.id GROUP BY t.id) topicInfo
+          LEFT JOIN thisisfive_user u on topicInfo.uid = u.id
+          WHERE u.id = ".$userId."
+          ORDER BY tcreatedate desc
+          LIMIT $num OFFSET $id");
+
+        $this->ajaxReturn($list);
+
+    }
 }
 ?>

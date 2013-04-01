@@ -17,7 +17,7 @@
                 <div class="stream-item" id="notification_{$vo.rcuid}" tid="{$vo.rcuid}">
                     <div  class="mod status-item ">
                         <div class="hd">
-                            <a class="icon" title="" href="/member/{$vo.uid}">
+                            <a class="icon" title="" href="__APP__/user/t/id/{$vo.uid}">
                                 <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.uimage}" />
                             </a>
                         </div>
@@ -44,7 +44,7 @@
             <div>
                 <if condition="session('?user_a')">
                     <div style="float:left; margin-right: 10px;">
-                        <a href="/member/{$Think.session.user_id}" style="display:block;">
+                        <a href="__APP__/user/t/id/{$Think.session.user_id}" style="display:block;">
                             <img width="100px" height="100px" alt="{$Think.session.user_a}" src="__ROOT__/Tpl/Public/image.php?width=100&amp;height=100&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$image}">
                         </a>
                     </div>
@@ -57,7 +57,7 @@
 
                     </div>
                     <else />
-                    欢迎来到 <b style="color: #4B8DC5;">五号社区</b>
+                    欢迎来到 <b style="color: #4B8DC5;">遇见</b>
                     <br>这里是一个简单、温暖的小社区。
                 </if>
 

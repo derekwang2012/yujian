@@ -82,7 +82,7 @@ function showMoreRecords(contextRoot, contextAPP) {
                         '<div class="stream-item" id="topic_'+msg[i].tid+'" tid="'+msg[i].tid+'">' +
                             '<div  class="mod status-item ">'+
                                 '<div class="hd">'+
-                                    '<a class="icon" title="" href="/member/'+msg[i].uid+'">'+
+                                    '<a class="icon" title="" href="'+contextAPP+'/user/t/id/'+msg[i].uid+'">'+
                                         '<img alt="{$vo.username}" title="'+msg[i].username+'" src="'+contextRoot+'/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image='+contextRoot+'/Tpl/Public/upload/'+msg[i].image+'" />'+
                                     '</a>'+
                                 '</div>'+
@@ -94,6 +94,62 @@ function showMoreRecords(contextRoot, contextAPP) {
                                 '</div>'+
                             '</div>'+
                         '</div>';
+                }
+
+                $(".stream-section").append(html);
+                count = parseInt(count) + 10;
+                $(".more-record").attr("id", count);
+
+                if(msg.length < 10) {
+                    $(".more-record").hide();
+                    $(".end-of-topic").show();
+                }
+                else {
+                    $(".more-record").show();
+                }
+            }
+            else {
+                $(".more-record").hide();
+                $(".end-of-topic").show();
+            }
+            $(".loading").hide();
+
+
+        }).fail(function() {
+            alert("error");
+        });
+}
+
+// 显示更多话题基于用户
+function showMoreRecordsOnUser(contextRoot, contextAPP, userId) {
+    var count = $(".more-record").attr('id');
+    $(".loading").show();
+    $(".more-record").hide();
+    $.post(contextAPP + '/user/more/',
+        { id: count , userId: userId},
+        function(msg) {
+            var msg = eval("(" + msg + ")");
+
+
+            var html = "";
+            if(msg.length > 0) {
+                for(var i= 0; i<msg.length; i++) {
+                    html +=
+                        '<div class="stream-item" id="topic_'+msg[i].tid+'" tid="'+msg[i].tid+'">' +
+                            '<div  class="mod status-item ">'+
+                            '<div class="hd">'+
+                            '<a class="icon" title="" href="'+contextAPP+'/user/t/id/'+msg[i].uid+'">'+
+                            '<img alt="{$vo.username}" title="'+msg[i].username+'" src="'+contextRoot+'/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image='+contextRoot+'/Tpl/Public/upload/'+msg[i].image+'" />'+
+                            '</a>'+
+                            '</div>'+
+                            '<div class="text">'+
+                            '<span><a class="tag tag_'+msg[i].tag_num+'" href="/tag/{$vo.tag}">'+msg[i].tag+'</a><a class="web_link" href="'+contextAPP+'/topic/read/id/'+msg[i].tid+'">'+msg[i].topic+'</a></span>'+
+                            '<span onselectstart="return false;" title="快捷回复" class="icon-comments">'+
+                            '<span class="comments-count">'+msg[i].replies+'</span>'+
+                            '</span>'+
+                            '</div>'+
+                            '</div>'+
+                            '</div>';
                 }
 
                 $(".stream-section").append(html);
@@ -269,6 +325,17 @@ $(function(){
             $('.errorMessage').html(html).show();
             return false;
         }
+        else {
+            $.blockUI({ css: {
+                border: 'none',
+                padding: '15px',
+                backgroundColor: '#000',
+                '-webkit-border-radius': '10px',
+                '-moz-border-radius': '10px',
+                opacity: .5,
+                color: '#fff'
+            } });
+        }
     }
     function complete(data){
         if(data.status==1){
@@ -277,6 +344,7 @@ $(function(){
             window.location = $("#app").val() + data.data;
         }else{
             $('.errorMessage').html(data.info).show();
+            $.unblockUI();
             return false;
         }
     }

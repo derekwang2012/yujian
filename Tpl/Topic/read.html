@@ -21,7 +21,7 @@
             </div>
             <div class="tools pull-right">
 
-                <a href="javascript:void(0)" id="likeable" class="likeable" data-id="{$tid}" data-context="__APP__" data-type="Topic" rel="twipsy" data-original-title="喜欢"><i class="icon small_like"></i> <span><span class="peopleLikes">{$tlike}</span>人喜欢</span></a>
+                <a href="javascript:void(0)" id="likeable" class="likeable" data-id="{$tid}" data-context="__APP__" data-type="Topic" rel="twipsy" data-original-title="喜欢"><i class="icon small_like"></i>&nbsp;<span><span class="peopleLikes">{$tlike}</span>人喜欢</span></a>
 
             </div>
         </div>
@@ -33,7 +33,7 @@
         <div class="box" style="">
             <div style="height: 100px;">
                 <div style="float:left; margin-right: 10px;">
-                    <a href="/member/{$uid}" style="display:block;">
+                    <a href="__APP__/user/t/id/{$uid}" style="display:block;">
                         <img width="100px" height="100px" alt="{$username}" src="__ROOT__/Tpl/Public/image.php?width=100&amp;height=100&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$uimage}">
                     </a>
                 </div>
@@ -63,7 +63,7 @@
                 <div class="comment-item" id="comment_{$vo.id}">
                     <a name="{$vo.id}" id="{$vo.id}"></a>
                     <div class="icon">
-                        <a href="/member/{$vo.uid}">
+                        <a href="__APP__/user/t/id/{$vo.uid}">
                             <if condition="$vo.image neq ''">
                                 <img src="__ROOT__/Tpl/Public/image.php?width=48&amp;height=48&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.image}" alt="{$vo.username}">
                             <else />
@@ -73,7 +73,7 @@
                     </div>
                     <div class="content">
                         <p style="" class="reply_user">
-                            <a class="to" style="font-size: 14px;" href="/member/{$vo.uid}">{$vo.username}</a>
+                            <a class="to" style="font-size: 14px;" href="__APP__/user/t/id/{$vo.uid}">{$vo.username}</a>
                             <span class="comment-time floor" style="float: right;">#{$key+1}</span>
 
                             <span class="comment-time">
@@ -93,7 +93,7 @@
         <if condition="session('?user_a')">
             <div class="reply_box comment-item" style="border: 0px; padding: 10px 16px 20px;">
                 <div class="icon">
-                    <a href="/member/{$loginuid}">
+                    <a href="__APP__/user/t/id/{$loginuid}">
                         <img src="__ROOT__/Tpl/Public/image.php?width=48&amp;height=48&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$loginuimage}" alt="{$loginusername}">
                     </a>
                 </div>

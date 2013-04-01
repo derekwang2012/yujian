@@ -1,0 +1,73 @@
+<include file="Public:header" />
+<body>
+<include file="Public:navigation" />
+<div class="container">
+    <!--主体-->
+    <div class="main radius">
+        <div class="home-header radius_top">
+            <div style="padding: 5px; color: #808080;">
+                {$usrname} 发表的话题
+            </div>
+        </div>
+        <div class="stream-section">
+            <volist name="list" id="vo">
+                <div class="stream-item" id="topic_{$vo.tid}" tid="{$vo.tid}">
+                    <div  class="mod status-item ">
+                        <div class="hd">
+                            <a class="icon" title="" href="__APP__/user/t/id/{$vo.uid}">
+                                <if condition="$vo.image != ''">
+                                    <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.image}" />
+                                    <else />
+                                    <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/default_avatar.png" />
+                                </if>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <span><a class="tag tag_{$vo.tag_num}" href="/tag/{$vo.tag}">{$vo.tag}</a><a class="web_link" href="__APP__/topic/read/id/{$vo.tid}">{$vo.topic}</a></span>
+                            <span onselectstart="return false;" title="快捷回复" class="icon-comments">
+                                <span class="comments-count">{$vo.replies}</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </volist>
+        </div>
+        <div style="padding: 15px 8px; text-align: center;">
+            <span class="loading"><img src="__ROOT__/Tpl/Public/img/ajax-loading.gif" alt="加载更多话题"/></span>
+            <span class="end-of-topic">没有话题了</span>
+            <a style="text-decoration:none; color: #808080;" class="more-record" id="{$num}" href="javascript:void(0)" onclick="showMoreRecordsOnUser('__ROOT__', '__APP__', {$userId})">更多话题</a>
+        </div>
+    </div>
+
+    <!--侧边栏-->
+    <div class="sidebar">
+        <div class="box" style="">
+            <div>
+                <div style="float:left; margin-right: 10px;">
+                    <a href="__APP__/user/t/id/{$userId}" style="display:block;">
+                        <img width="100px" height="100px" alt="{$Think.session.user_a}" src="__ROOT__/Tpl/Public/image.php?width=100&amp;height=100&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$image}">
+                    </a>
+                </div>
+                <div>
+                    <div style="color:#636A86">
+                        {$usrname}
+                        <span class="sidebar_user_online"><span class="sidebar_user_online_text">•</span><span class="online_text">在线</span></span>
+                    </div>
+                    <div style="margin-top: 10px; color: #808080; word-wrap: break-word;overflow: hidden;">{$udesc}</div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="box" style="margin-top: 20px;">
+            <div>
+                <span style="color: #808080; margin-right: 10px;">现在网络发达了，但充满了铜臭味，很难找到一个干净，简单，温暖的地方聊天了，遇见就是本着简单和温暖的想法来创建的。</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="Public:footer" />
+
+</body>
+</html>

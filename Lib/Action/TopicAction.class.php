@@ -140,7 +140,7 @@ class TopicAction extends Action {
             if ($vo = $Form->create()) {
                 $list = $Form->add($data);
                 if ($list !== false) {
-                    $this->ajaxReturn($list,'数据写入成功！',1);
+                    $this->ajaxReturn($list,'发表话题成功！',1);
                 } else {
                     $this->ajaxReturn('','数据写入错误！',0);
                 }
