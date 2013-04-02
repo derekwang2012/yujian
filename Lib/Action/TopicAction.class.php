@@ -107,7 +107,14 @@ class TopicAction extends Action {
         {
             $Form = M("Topic");
             $data["topic"] = $_POST["topic"];
-            $data["content"] = makelink($_POST["content"]);
+            if($_POST["musicId"] != "") {
+                $data["content"] = makelink($_POST["content"]) . "<br/><embed src='http://www.xiami.com/widget/0_" . $_POST["musicId"] . "/singlePlayer.swf' type='application/x-shockwave-flash' width='257' height='33' wmode='transparent'>";
+            }
+            else {
+                $data["content"] = makelink($_POST["content"]);
+            }
+
+
             $data["tag"] = $_POST["tag_name"];
             $data["tag_num"] = mt_rand(0,14);
             $data["user_id"] = session('user_id');

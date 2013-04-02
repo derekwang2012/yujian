@@ -1128,6 +1128,10 @@ body {
     width: 380px;
 }
 
+.width222 {
+    width: 222px;
+}
+
 .width120 {
     width: 120px;
     margin-left: 60px;
@@ -1178,4 +1182,25 @@ body {
     color: #999;
     font-size: 13px;
     line-height: 18px;
+}
+
+.add_music {
+    font-size: 16px;
+    font-weight: bold;
+    height: 35px;
+    width: 100px;
+    margin-left: 5px;
+}
+
+#resultTotal {
+    font-size: 12px;
+}
+
+.singleSong a {
+    font-size: 12px;
+    color: green;
+}
+
+.singleSong a:hover {
+    color: #cd5c5c;
 }

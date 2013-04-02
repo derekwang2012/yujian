@@ -13,6 +13,13 @@ $(document).ready(function() {
         $("#tag_input").show();
     });
 
+    // 点击添加music，显示music表单
+    $("#add_music_link").click(function(e) {
+        e.preventDefault();
+        $(this).hide();
+        $("#music_input").show();
+    });
+
     // 定义timeago插件
     jQuery("abbr.timeago").timeago();
 
@@ -22,8 +29,6 @@ $(document).ready(function() {
         var append_str = "@" + $(this).attr("data") + " ";
 
         $("#reply_content").insertAtCaret(append_str);
-
-
     });
 
     // 显示回复当鼠标进入，隐藏当滑出
@@ -41,7 +46,6 @@ $(document).ready(function() {
             $(this).find(".talk").hide();
             $(this).find(".reply_time").show();
         }
-
     });
 
     // 点击喜欢
@@ -62,7 +66,59 @@ $(document).ready(function() {
             });
     });
 
+    $('#search_music').click(function(){
+        $("#result").html('');
+        $("#musicSearchDesc").hide();
+        search();
+    });
+
+    $("#navi").click(function(){
+        var page = parseInt($("#page").val());
+        $("#page").val(++page);
+        search();
+    });
 });
+
+function search() {
+    $.ajax({
+        url: "http://www.xiami.com/app/nineteen/search/key/"+$('#music_text').val()+"/page/"+$('#page').val(),
+        type: "get",
+        dataType: "jsonp",
+        beforeSend: function() {
+            $('#resultTotal').html("<div style='margin-top: 10px;'><img src='http://yvjian.com/Tpl/Public/img/ajax-loading.gif' /></div>");
+        },
+        success: function(data, status) {
+            $('#show').html('');
+            $('#resultTotal').html("共找到 " + data.total + " 首歌曲结果符合 " + $('#music_text').val());
+            $("#list").css('display','block');
+            if(data.total / 8 != 1) {
+                $('#navi').html('<a href="javascript:void(0)">载入更多</a>');
+            }
+            $.each(data.results, function(i,item){
+                $('<p class="singleSong"><a href="javascript:void(0)" onclick="show(\''+item.song_id+'\');">'+decodeURIComponent(item.song_name)+' - '+decodeURIComponent(item.artist_name)+'</a></p>').appendTo('#result');
+            });
+        },
+        error: function() {
+            alert('failed!');
+        }
+    });
+}
+
+function addItToTextArea(id) {
+    $("#music_src_id").val(id);
+    $('.infoMessage').html("音乐添加成功").show();
+}
+
+function show(id) {
+    //搜索结束搜索起始页面自动返回到1
+    $('#page').val('1');
+    $('#list').css('display', 'none');
+    var html = '<strong>预览：</strong><br/>' +
+        '<div style="float: left"><embed src="http://www.xiami.com/widget/0_'+id+'/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent" id="xiamisource"></div>' +
+        '<button id="add_music" type="button" class="add_music" onclick="addItToTextArea('+id+')">添加音乐</button>';
+
+    $("#show").html(html);
+}
 
 // 显示更多话题
 function showMoreRecords(contextRoot, contextAPP) {
@@ -320,21 +376,29 @@ $(function(){
         if( ""==$("#file").val()) {
             html = "请选择你的图片！";
         }
+        var ext = $('#file').val().split('.').pop().toLowerCase();
+        if($.inArray(ext, ['png','jpg','jpeg']) == -1) {
+            html = "上传文件类型不允许";
+        }
+
         if(html != '') {
             $('.infoMessage').hide();
             $('.errorMessage').html(html).show();
             return false;
         }
         else {
-            $.blockUI({ css: {
-                border: 'none',
-                padding: '15px',
-                backgroundColor: '#000',
-                '-webkit-border-radius': '10px',
-                '-moz-border-radius': '10px',
-                opacity: .5,
-                color: '#fff'
-            } });
+            $.blockUI({
+                message: '上传中...',
+                css: {
+                    border: 'none',
+                    padding: '15px',
+                    backgroundColor: '#000',
+                    '-webkit-border-radius': '10px',
+                    '-moz-border-radius': '10px',
+                    opacity: .5,
+                    color: '#fff'
+                }
+            });
         }
     }
     function complete(data){

@@ -28,12 +28,30 @@
                             <span style="margin-left: 10px; font-size: 12px;">标签为两个汉字（如电影、工作等，清晰、合理的标签可以让话题更有价值。）</span>
                         </div>
                     </div>
+                    <div class="item">
+                        <a href="#" id="add_music_link" style="color: #808080;">添加音乐</a>
+                        <div style="display:none;" id="music_input">
+                            <input name="music_name" class="text" id="music_text" type="text" value="" style="width:250px;">
+                            <input type="hidden" id="page" value="1">
+                            <input type="hidden" id="music_src_id" name="musicId" value="">
+                            <button id="search_music" type="button" class="reg_bottom" >搜索音乐</button>
+                            <br />
+                            <span id="musicSearchDesc" style="font-size: 12px;">音乐由虾米提高，支持拼音搜索。如搜索 “陈绮贞” 输入“cqz” 就ok啦</span>
+                            <!--#result用来显示歌曲列表 | #navi增加载入更多特效 | #show用来显示播放器代码-->
+                            <div id="resultTotal"></div>
+                            <div id="list">
+                                <div id="result"></div>
+                                <div id="navi"></div>
+                            </div>
+                            <div id="show"></div>
+                        </div>
+                    </div>
                     <div>
                         <input type="hidden" name="ajax" value="1">
                         <input type="hidden" name="app" id="app" value="__APP__">
                         <div class="width130 errorMessage"></div>
                         <div class="width130 infoMessage"></div>
-                        <input class="reg_bottom" type="submit" value="创建" />
+                        <input class="reg_bottom" type="submit" value="创建话题" />
 
                     </div>
 
@@ -62,7 +80,7 @@
 
                     </div>
                     <else />
-                    欢迎来到 <b style="color: #4B8DC5;">五号社区</b>
+                    欢迎来到 <b style="color: #4B8DC5;">遇见</b>
                     <br>这里是一个简单、温暖的小社区。
                 </if>
 
