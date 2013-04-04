@@ -67,7 +67,7 @@
             <div>
                 <if condition="session('?user_a')">
                     <div style="float:left; margin-right: 10px;">
-                        <a href="__APP__/user/t/id/{$Think.session.user_id}" style="display:block;">
+                        <a href="__APP__/user/t/{$Think.session.user_id}" style="display:block;">
                             <img width="100px" height="100px" alt="{$Think.session.user_a}" src="__ROOT__/Tpl/Public/image.php?width=100&amp;height=100&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$image}">
                         </a>
                     </div>

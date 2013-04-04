@@ -6,7 +6,7 @@ return array(
     'DB_HOST'               => 'localhost', // 服务器地址
     'DB_NAME'               => 'newphpproject',          // 数据库名
     'DB_USER'               => 'root',      // 用户名
-    'DB_PWD'                => 'root',          // 密码
+    'DB_PWD'                => '',          // 密码
     'DB_PORT'               => '',        // 端口
     'DB_PREFIX'             => 'thisisfive_',    // 数据库表前缀
     'DB_FIELDTYPE_CHECK'    => false,       // 是否进行字段类型检查
@@ -24,5 +24,10 @@ return array(
     'URL_CASE_INSENSITIVE'  => true,
     'URL_MODEL'             => 2,
     'LOAD_TOPIC_NUM'        => 10,
+    'URL_ROUTER_ON'         => true, //开启路由
+    'URL_ROUTE_RULES'       => array( //定义路由规则
+        'topic/read/:id'               => 'topic/read',
+        'user/t/:id'               => 'user/t',
+    ),
 );
 ?>

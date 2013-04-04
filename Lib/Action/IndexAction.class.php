@@ -6,6 +6,12 @@ class IndexAction extends Action {
         header("Content-Type:text/html; charset=utf-8");
     }
 
+    public function _empty()
+    {
+        header("HTTP/1.0 404 Not Found");
+        $this->display('Public:404');
+    }
+
     public function index() {
         $num = C('LOAD_TOPIC_NUM');
 
@@ -28,6 +34,7 @@ class IndexAction extends Action {
             $condition['id'] = session('user_id');
             $list = $User->where($condition)->find();
             $this->assign('udesc',$list['description']);
+            $this->assign('status',$list['status']);
             if($list['image'] != "")
                 $this->assign('image',$list['image']);
             else

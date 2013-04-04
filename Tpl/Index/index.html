@@ -14,7 +14,7 @@
                 <div class="stream-item" id="topic_{$vo.tid}" tid="{$vo.tid}">
                     <div  class="mod status-item ">
                         <div class="hd">
-                            <a class="icon" title="" href="__APP__/user/t/id/{$vo.uid}">
+                            <a class="icon" title="" href="__APP__/user/t/{$vo.uid}">
                                 <if condition="$vo.image != ''">
                                     <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.image}" />
                                 <else />
@@ -23,7 +23,8 @@
                             </a>
                         </div>
                         <div class="text">
-                            <span><a class="tag tag_{$vo.tag_num}" href="/tag/{$vo.tag}">{$vo.tag}</a><a class="web_link" href="__APP__/topic/read/id/{$vo.tid}">{$vo.topic}</a></span>
+                            <span><if condition="$vo.tag != ''"><a class="tag tag_{$vo.tag_num}" href="/tag/{$vo.tag}">{$vo.tag}</a></if>
+                                <a class="web_link" href="__APP__/topic/read/{$vo.tid}">{$vo.topic}</a></span>
                             <span onselectstart="return false;" title="快捷回复" class="icon-comments">
                                 <span class="comments-count">{$vo.replies}</span>
                             </span>
@@ -45,14 +46,19 @@
             <div>
                 <if condition="session('?user_a')">
                     <div style="float:left; margin-right: 10px;">
-                        <a href="__APP__/user/t/id/{$Think.session.user_id}" style="display:block;">
+                        <a href="__APP__/user/t/{$Think.session.user_id}" style="display:block;">
                             <img width="100px" height="100px" alt="{$Think.session.user_a}" src="__ROOT__/Tpl/Public/image.php?width=100&amp;height=100&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$image}">
                         </a>
                     </div>
                     <div>
                         <div style="color:#636A86">
                             {$Think.session.user_a}
-                            <span class="sidebar_user_online"><span class="sidebar_user_online_text">•</span><span class="online_text">在线</span></span>
+                            <if condition="$status eq 1">
+                                <span class="sidebar_user_online">
+                                    <span class="sidebar_user_online_text">•</span>
+                                    <span class="online_text">在线</span>
+                                </span>
+                            </if>
                         </div>
                         <div style="margin-top: 10px; color: #808080; word-wrap: break-word;overflow: hidden;">{$udesc}</div>
 

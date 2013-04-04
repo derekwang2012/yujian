@@ -17,14 +17,14 @@
                 <div class="stream-item" id="notification_{$vo.rcuid}" tid="{$vo.rcuid}">
                     <div  class="mod status-item ">
                         <div class="hd">
-                            <a class="icon" title="" href="__APP__/user/t/id/{$vo.uid}">
+                            <a class="icon" title="" href="__APP__/user/t/{$vo.uid}">
                                 <img alt="{$vo.username}" title="{$vo.username}" src="__ROOT__/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$vo.uimage}" />
                             </a>
                         </div>
                         <div class="text">
                             {$vo.usernmae}
                             <span style="color: #808080">回复了</span>
-                            <a style="color: #4B8DC5;" href="__APP__/Topic/read/id/{$vo.tid}#{$vo.rid}">{$vo.topic}</a>
+                            <a style="color: #4B8DC5;" href="__APP__/Topic/read/{$vo.tid}#{$vo.rid}">{$vo.topic}</a>
                             <a title="清除这条提醒" class="notifi_read" style="color: #808080; margin-left: 20px;" href="__APP__/notification/delete/id/{$vo.rcuid}">X</a>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
             <div>
                 <if condition="session('?user_a')">
                     <div style="float:left; margin-right: 10px;">
-                        <a href="__APP__/user/t/id/{$Think.session.user_id}" style="display:block;">
+                        <a href="__APP__/user/t/{$Think.session.user_id}" style="display:block;">
                             <img width="100px" height="100px" alt="{$Think.session.user_a}" src="__ROOT__/Tpl/Public/image.php?width=100&amp;height=100&amp;cropratio=1:1&amp;image=__ROOT__/Tpl/Public/upload/{$image}">
                         </a>
                     </div>

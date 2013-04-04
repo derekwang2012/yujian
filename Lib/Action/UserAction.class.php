@@ -1,6 +1,11 @@
 <?php
 
 class UserAction extends Action {
+    public function _empty()
+    {
+        header("HTTP/1.0 404 Not Found");
+        $this->display('Public:404');
+    }
 
     // 显示注册页
     public function reg() {
@@ -91,6 +96,9 @@ class UserAction extends Action {
             return false;
         }else{
             if($rset['password']==$password){
+                $data['status'] = 1;
+                $result = M("User")->where($w)->save($data);
+
                 session('user_a',$rset['username']);
                 session('user_id',$rset['id']);
 
@@ -105,6 +113,9 @@ class UserAction extends Action {
 
     // 退出动作
     public function logout(){
+        $data['status'] = 0;
+        $w['id']=array('eq',session('user_id'));
+        $result = M("User")->where($w)->save($data);
         session('user_a',null);
         session('user_id',null);
         $this->redirect('/index');

@@ -134,16 +134,19 @@ function showMoreRecords(contextRoot, contextAPP) {
             var html = "";
             if(msg.length > 0) {
                 for(var i= 0; i<msg.length; i++) {
+                    var tag = "";
+                    if(msg[i].tag != '')
+                        tag = '<a class="tag tag_'+msg[i].tag_num+'" href="/tag/{$vo.tag}">'+msg[i].tag+'</a>';
                     html +=
                         '<div class="stream-item" id="topic_'+msg[i].tid+'" tid="'+msg[i].tid+'">' +
                             '<div  class="mod status-item ">'+
                                 '<div class="hd">'+
-                                    '<a class="icon" title="" href="'+contextAPP+'/user/t/id/'+msg[i].uid+'">'+
+                                    '<a class="icon" title="" href="'+contextAPP+'/user/t/'+msg[i].uid+'">'+
                                         '<img alt="{$vo.username}" title="'+msg[i].username+'" src="'+contextRoot+'/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image='+contextRoot+'/Tpl/Public/upload/'+msg[i].image+'" />'+
                                     '</a>'+
                                 '</div>'+
                                 '<div class="text">'+
-                                    '<span><a class="tag tag_'+msg[i].tag_num+'" href="/tag/{$vo.tag}">'+msg[i].tag+'</a><a class="web_link" href="'+contextAPP+'/topic/read/id/'+msg[i].tid+'">'+msg[i].topic+'</a></span>'+
+                                    '<span>'+tag+'<a class="web_link" href="'+contextAPP+'/topic/read/'+msg[i].tid+'">'+msg[i].topic+'</a></span>'+
                                     '<span onselectstart="return false;" title="快捷回复" class="icon-comments">'+
                                         '<span class="comments-count">'+msg[i].replies+'</span>'+
                                     '</span>'+
@@ -194,12 +197,12 @@ function showMoreRecordsOnUser(contextRoot, contextAPP, userId) {
                         '<div class="stream-item" id="topic_'+msg[i].tid+'" tid="'+msg[i].tid+'">' +
                             '<div  class="mod status-item ">'+
                             '<div class="hd">'+
-                            '<a class="icon" title="" href="'+contextAPP+'/user/t/id/'+msg[i].uid+'">'+
+                            '<a class="icon" title="" href="'+contextAPP+'/user/t/'+msg[i].uid+'">'+
                             '<img alt="{$vo.username}" title="'+msg[i].username+'" src="'+contextRoot+'/Tpl/Public/image.php?width=22&amp;height=22&amp;cropratio=1:1&amp;image='+contextRoot+'/Tpl/Public/upload/'+msg[i].image+'" />'+
                             '</a>'+
                             '</div>'+
                             '<div class="text">'+
-                            '<span><a class="tag tag_'+msg[i].tag_num+'" href="/tag/{$vo.tag}">'+msg[i].tag+'</a><a class="web_link" href="'+contextAPP+'/topic/read/id/'+msg[i].tid+'">'+msg[i].topic+'</a></span>'+
+                            '<span><a class="tag tag_'+msg[i].tag_num+'" href="/tag/{$vo.tag}">'+msg[i].tag+'</a><a class="web_link" href="'+contextAPP+'/topic/read/'+msg[i].tid+'">'+msg[i].topic+'</a></span>'+
                             '<span onselectstart="return false;" title="快捷回复" class="icon-comments">'+
                             '<span class="comments-count">'+msg[i].replies+'</span>'+
                             '</span>'+
@@ -438,7 +441,7 @@ $(function(){
     }
     function complete(data){
         if(data.status==1){
-            window.location = $("#app").val() + '/topic/read/id/' + data.data;
+            window.location = $("#app").val() + '/topic/read/' + data.data;
         }else{
             $('.errorMessage').html(data.info).show();
             return false;
@@ -499,7 +502,7 @@ $(function(){
         if(data.status==1){
             $('.infoMessage').html(data.info).show();
             $('.errorMessage').html(data.info).hide();
-            window.location = $("#app").val() + '/topic/read/id/' + data.data;
+            window.location = $("#app").val() + '/topic/read/' + data.data;
         }else{
             $('.errorMessage').html(data.info).show();
             return false;

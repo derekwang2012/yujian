@@ -1,6 +1,11 @@
 <?php
 
 class TopicAction extends Action {
+    public function _empty()
+    {
+        header("HTTP/1.0 404 Not Found");
+        $this->display('Public:404');
+    }
 
     public function read($id) {
         // 访问数自动加1
@@ -12,7 +17,7 @@ class TopicAction extends Action {
         $result = $Topic
             ->table('thisisfive_topic t, thisisfive_user u')
             ->where('t.id = ' . $id . ' AND t.user_id = u.id')
-            ->field('t.topic as topic, t.content as content, t.tag as tag, t.tag_num as tag_num, t.create_date as create_date, t.hits as hits, t.likes as likes, u.id as uid, u.username as username, u.image as image, u.description as description')
+            ->field('t.topic as topic, t.content as content, t.tag as tag, t.tag_num as tag_num, t.create_date as create_date, t.hits as hits, t.likes as likes, u.id as uid, u.username as username, u.image as image, u.description as description, u.status as status')
             ->order('t.create_date desc' )
             ->select();
 
@@ -27,6 +32,7 @@ class TopicAction extends Action {
         $this->assign('uid',$result[0]['uid']);
         $this->assign('username',$result[0]['username']);
         $this->assign('udesc',$result[0]['description']);
+        $this->assign('ustatus',$result[0]['status']);
 
         if($result[0]['image'] != "")
             $this->assign('uimage',$result[0]['image']);
@@ -53,7 +59,7 @@ class TopicAction extends Action {
         $list = $Reply
             ->table('thisisfive_reply r, thisisfive_topic t, thisisfive_user u')
             ->where('r.topic_id = t.id AND t.id = ' . $id . ' AND r.user_id = u.id')
-            ->field('r.id as id, r.content as content, r.create_date as create_date, u.id as uid, u.image as image, u.username as username')
+            ->field('r.id as id, r.content as content, r.create_date as create_date, u.id as uid, u.image as image, u.username as username, u.status as status')
             ->order('r.create_date asc' )
             ->select();
 
