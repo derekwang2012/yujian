@@ -114,10 +114,10 @@ class TopicAction extends Action {
             $Form = M("Topic");
             $data["topic"] = $_POST["topic"];
             if($_POST["musicId"] != "") {
-                $data["content"] = makelink($_POST["content"]) . "<br/><embed src='http://www.xiami.com/widget/0_" . $_POST["musicId"] . "/singlePlayer.swf' type='application/x-shockwave-flash' width='257' height='33' wmode='transparent'>";
+                $data["content"] = makelink(nl2br($_POST["content"])) . "<br/><embed src='http://www.xiami.com/widget/0_" . $_POST["musicId"] . "/singlePlayer.swf' type='application/x-shockwave-flash' width='257' height='33' wmode='transparent'>";
             }
             else {
-                $data["content"] = makelink($_POST["content"]);
+                $data["content"] = makelink(nl2br($_POST["content"]));
             }
 
 
@@ -170,7 +170,7 @@ class TopicAction extends Action {
         {
             $Reply = M("Reply");
             $data["topic_id"] = $_POST["tid"];
-            $data["content"] = $_POST["content"];
+            $data["content"] = makelink(nl2br($_POST["content"]));
             $data["user_id"] = session('user_id');
 
             if ($vo = $Reply->create()) {
