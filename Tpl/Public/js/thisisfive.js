@@ -429,13 +429,14 @@ $(function(){
         var html = "";
         var reply = $("#reply_content");
         var replyVal = $.trim(reply.val());
-
+        $("#replyBtn").attr('disabled','disabled');
         if(replyVal == null || replyVal == '') {
             html = "回帖内容不能空！";
         }
         if(html != '') {
             $('.infoMessage').hide();
             $('.errorMessage').html(html).show();
+            $("#replyBtn").removeAttr('disabled');
             return false;
         }
     }
@@ -444,6 +445,7 @@ $(function(){
             window.location = $("#app").val() + '/topic/read/' + data.data;
         }else{
             $('.errorMessage').html(data.info).show();
+            $("#replyBtn").removeAttr('disabled');
             return false;
         }
     }
@@ -457,6 +459,7 @@ $(function(){
         dataType: 'json'
     });
     function checkForm(){
+        $("#doRegBtn").attr('disabled','disabled');
         var html = "";
         if(html != '') {
             $('.infoMessage').hide();
@@ -466,11 +469,12 @@ $(function(){
     }
     function complete(data){
         if(data.status==1){
-            $('.infoMessage').html(data.info).show();
+            /*$('.infoMessage').html(data.info).show();*/
             $('.errorMessage').html(data.info).hide();
             window.location = $("#app").val() + data.data;
         }else{
             $('.errorMessage').html(data.info).show();
+            $("#doRegBtn").removeAttr('disabled');
             return false;
         }
     }
@@ -487,7 +491,7 @@ $(function(){
         var html = "";
         var topic = $("#topic");
         var topicVal = $.trim(topic.val());
-
+        $("#createTopicBtn").attr('disabled','disabled');
         if(topicVal == null || topicVal == '' || topicVal.length < 5) {
             html = "标题不少于5个字！";
         }
@@ -495,6 +499,7 @@ $(function(){
         if(html != '') {
             $('.infoMessage').hide();
             $('.errorMessage').html(html).show();
+            $("#createTopicBtn").removeAttr('disabled');
             return false;
         }
     }
@@ -505,6 +510,7 @@ $(function(){
             window.location = $("#app").val() + '/topic/read/' + data.data;
         }else{
             $('.errorMessage').html(data.info).show();
+            $("#createTopicBtn").removeAttr('disabled');
             return false;
         }
     }
